@@ -1,5 +1,8 @@
-@import './layout/variables.scss';
-@import './layout/reset';
+@import './config/reset';
+@import './config/variables.scss';
+@import './config/style.scss';
+
+
 @import './layout/nav.scss';
 @import './layout/warning';
 @import './layout/footer.scss';
