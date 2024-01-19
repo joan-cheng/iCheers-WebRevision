@@ -48,9 +48,9 @@ export default defineConfig({
       output: {
         // 自定義資源檔案名稱和路徑
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name.endsWith('.jpg')) {
+          if (assetInfo.name.endsWith('.jpg') || assetInfo.name.endsWith('.svg') || assetInfo.name.endsWith('.png')) {
             return 'images/[name]-[hash][extname]';
-          }
+          } 
           return 'assets/[name]-[hash][extname]';
         }
       }

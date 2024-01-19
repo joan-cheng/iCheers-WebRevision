@@ -5,13 +5,27 @@
     position: fixed;
     bottom: 0;
     background-color: #252525;
-    color: #d1d1d1;
+    color: $BGColor-labelLight;
     text-align: center;
-    font-size: 40px;
     font-weight: 200;
-    font-family: 'IBM Plex Sans JP', sans-serif;
+    font-family: $fontFamily-IBM;
     p {
-        letter-spacing: 10%;
+        width: 100%; height: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            display: inline-block;
+            letter-spacing: 20px;
+            
+            font-size: 3rem;
+            text-align:justify;
+            &:first-child {
+                margin-right: 2%;
+            }
+        }
     }
     
     

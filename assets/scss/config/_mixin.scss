@@ -1,0 +1,19 @@
+// 圖片取代文字
+@mixin hide-text {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+//media setting
+@mixin pad {
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 568px) {
+        @content
+    }
+}
