@@ -16,16 +16,29 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
         span {
             display: inline-block;
-            letter-spacing: 20px;
-            
-            font-size: 3rem;
+            letter-spacing: 0px;
+            white-space:nowrap;
+            font-size: 1.5rem;
             text-align:justify;
             &:first-child {
                 margin-right: 2%;
             }
+            @include pad {
+                letter-spacing: 0;
+                font-size: 2.5rem;
+            }
+            @include largepad {
+                letter-spacing: 5px;
+            }
+            @include desk {
+                letter-spacing: 20px;
+                font-size: 3rem;
+            }
         }
+        
     }
     
     
