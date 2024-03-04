@@ -8,18 +8,30 @@
     <!-- <meta property="og:image" content="預覽圖 URL" /> -->
     <meta property="og:description" content="讓你窩在家就能享受葡萄酒" />
     <title>iCheers愛酒窩-綜合首頁</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.icheers.tw/iCheers/Content/images/drop.ico">
+    <!-- 定義變數 -->
+    <% const page = 'index'; %>
   </head>
   <body>
-    <%- include('./layout/nav'); -%>
-    <%- include('./components/B-banner'); -%>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
-    <img src="../assets/images/KennyLee.jpg" style="width: 300px;" alt="cat">
-    <img src="../assets/images/TonyWang.jpg" style="width: 300px;" alt="cat">
-
+    <%- include('./layout/nav',{page: page}); -%>
+    <%- include('./components/B-carousel'); -%>
+    <div class="layout__doubleColumn">
+      <%- include('./components/U-classification',{page: page}); -%>
+      <%- include('./components/C-textBoard'); -%>
+    </div>
+    <%- include('./components/R-keywords') -%>
+    <%- include('./components/K-limitedtimeOffer') -%>
+    <%- include('./components/T-setPrice') -%>
+    <%- include('./components/L-itemsRanking') -%>
+    <%- include('./components/M-itemList') -%>
+    <%- include('./components/N-freeGift') -%>
+    <%- include('./components/S_brands') -%>
+    <%- include('./components/O-articles-activity') -%>
+    <%- include('./components/Q-articles-items') -%>
+    <%- include('./components/G-banners'); -%>
     <%- include('./layout/footer'); -%>
     <%- include('./layout/warning'); -%>
+    
     <script type="module" src="../main.js"></script>
   </body>
 </html>
