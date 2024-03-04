@@ -1,6 +1,6 @@
 import './assets/scss/all.scss';
 // jquery
-import * as jquery from "./assets/js/jquery-3.7.1.min";
+// import * as jquery from "./assets/js/jquery-3.7.1.min";
 // bootstrap
 import './assets/js/bootstrap.bundle.min';
 // Owl Carousel
