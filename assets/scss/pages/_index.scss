@@ -1220,8 +1220,14 @@
   }
   &__items{
     width: 100%;
-    padding: 0 2%;
+    padding: 0 1rem;
     position: relative;
+    @media (max-width: 420px) {
+      padding: 0 3rem;
+    }
+    @include largepad{
+      padding: 0 3rem;
+    }
     &::after{
       content: '';
       width: 100%; height: 1px;
@@ -1265,7 +1271,7 @@
       color: $fontColor-dark;
       display: block;
       word-wrap: break-word;
-      @include line-clamp (4);
+      @include line-clamp (3);
     }
     &--more{
       width: 100%;
