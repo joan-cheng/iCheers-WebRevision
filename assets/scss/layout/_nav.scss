@@ -13,6 +13,14 @@
   align-items: center;
   flex-wrap: wrap;
   transition: left 0.3s ease;
+  &.hideUp{
+    top: -70px;
+  }
+  @include largepad{
+    &.hideUp{
+      top: 0px;
+    }
+  }
 
   //上方導覽列
   &__items{
