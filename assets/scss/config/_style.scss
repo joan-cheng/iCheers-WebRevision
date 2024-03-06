@@ -29,6 +29,11 @@ ul{
   border-radius: 50%;
   position: absolute; top: 5px; right: 5px;
   border: #F9F1E8 solid 1px;
+  opacity: 1;
+  transition: 0.4s;
+  @include largepad{
+    opacity: 0;
+  }
   span{
     width: 32px; height: 32px;
     background-image: url(../images/icon_favorite.svg);
@@ -45,8 +50,12 @@ ul{
   &:hover span{
     background-position: left bottom;
   }
-  
-  
+  &.active{opacity: 1;}
+}
+@mixin favoriteBTN--show {
+  &:hover .favoriteBTN{
+    opacity: 1;
+  }
 }
 
 

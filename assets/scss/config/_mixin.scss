@@ -119,18 +119,21 @@
 }
 // itemCard-info
 @mixin itemCard-info {
+    line-height: 35px;
     span:not(:last-child)::after{
         content: '';
         width: 1px; height: 10px;
+        
         border-right: $fontColor-dark solid 1px;
         display: inline-block;
-        margin: 0 0.5rem;
+        margin: 0 0.7rem;
       }
 }
 // itemCard-picwrap
 @mixin itemCard-picwrap {
-    width: 150px; height: 200px;
+    width: 200px; height: 250px;
     display: flex; justify-content: center; align-items: flex-end;
+    margin: auto;
 }
 @mixin itemCard-picimg {
     width: 95%; height: 95%; object-fit: contain;
@@ -139,6 +142,7 @@
 }
 // 評價樣式
 @mixin awards {
+    font-size: 14px;
     border: $fontColor-disable solid 1px;
     border-radius: 5px;
     padding: 0 5px;

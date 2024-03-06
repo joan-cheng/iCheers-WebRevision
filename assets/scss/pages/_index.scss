@@ -418,19 +418,20 @@
       width: 100%; height: 1px;
       border-bottom: $commonColor-highlight solid 1px;
       position: absolute;
-      top: 200px;
+      top: 250px;
       left: 0;
     }
   }
   &__item{
-    width: 300px;
+    @include favoriteBTN--show;
+    width: 250px;
     margin: auto;
     display: flex;
     flex-direction: column; justify-content: center; align-items: flex-end;
     gap: 10px;
     position: relative;
     .favoriteBTN{
-      top: calc(200px - 135px);
+      top: calc(250px * 30 / 100 + 5px);
     }
   }
   &__name{
@@ -462,7 +463,7 @@
     }
   }
   &__pic{
-    width: 100%; height: 200px;
+    width: 100%; height: 250px;
     margin: auto;
     order: -1;
     &__wrap{
@@ -546,15 +547,13 @@
 
 // -------------------- L-itemsRanking & M-itemList
 .L-itemsRanking, .M-itemList{
-  width: 100%;
+  width: 100%; 
   @include max-width;
   margin: auto;
   @include space-between-components;
+  
   .owl-nav{display: none;}
   .owl-dots{padding: 1rem 0;}
-  .owl-stage-outer{
-    padding-top: 5px;
-  }
   &__title{
     @include component-title;
     display: flex; justify-content: center; align-items: center;
@@ -563,14 +562,26 @@
     width: 100%;
     padding: 0 2%;
   }
+  
   &__item{
+    max-width: 250px; height: 100%;
     display: flex; flex-direction: column; justify-content: space-between; align-items: flex-end;
+    margin: auto;
+    position: relative;
+    @include favoriteBTN--show;
+  }
+  &__wrap{
+    width: 100%;
+    background-color: $BGColor-primary;
+    flex-grow: 1;
+    display: flex; flex-direction: column;
   }
   &__name{
     width: 100%;
     background-color: $BGColor-primary;
     margin-bottom: 0;
     padding: 0 10px;
+    flex-grow: 1;
     span{
       display: block;
       line-height: 25px;
@@ -586,7 +597,7 @@
   &__info{
     width: 100%;
     background-color: $BGColor-primary;
-    line-height: 25px;
+    
     padding: 0 10px 10px 10px;
     @include itemCard-info;
     &__awards{
@@ -607,7 +618,7 @@
     }
   }
   &__pic{
-    width: 100%; height: 200px;
+    width: 100%; height: 250px;
     order: -1;
     background-color: $BGColor-primary;
     position: relative;
@@ -630,8 +641,23 @@
       color: #fff;
     }
   }
-
 }
+  // -------------------- L-itemsRanking
+  .L-itemsRanking{
+    .item{
+      height: calc(100% - 30px);
+    }
+    &__item{
+      margin-top: 30px;
+    }
+    &__pic{
+      position: relative;
+      height: calc(250px - 30px);
+      &__wrap{
+        position: relative; top: -30px;
+      }
+    }
+  } 
 // -------------------- M-itemList
 .M-itemList{
   .owl-stage-outer{
@@ -639,6 +665,9 @@
   }
   .owl-item:nth-child(even) .M-itemList__pic{
     background-color: transparent;
+  }
+  .item{
+    height: 100%;
   }
   &__items{
     width: 100%;
@@ -650,7 +679,7 @@
       width: 100%; height: 1px;
       border-bottom: $commonColor-highlight solid 1px;
       position: absolute;
-      top: 200px;
+      top: calc(250px + 20px);
       left: 0;
     }
     &::before{
@@ -671,6 +700,14 @@
   }
   &__info{
     background-color: transparent;
+  }
+  &__wrap{
+    background-color: transparent;
+  }
+  &__pic{
+    height: calc(250px + 20px);
+    display: flex; justify-content: center; align-items: center;
+    flex-shrink: 0;
   }
 }
 // -------------------- N-freeGift
@@ -1143,6 +1180,7 @@
     position: relative;
     width: 80%; height: 200px;
     margin: auto;
+    @include favoriteBTN--show;
     @include pad{
       width: 90%;
     }
@@ -1416,6 +1454,7 @@
   &__item{
     padding: 0 5px;
     line-height: 50px;
+    color: $fontColor-secondary;
     @include nowrap;
     &:hover{
       color: $commonColor-primary;
