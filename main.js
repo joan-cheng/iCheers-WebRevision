@@ -327,6 +327,9 @@ $(function() {
     // autoWidth: true,
     responsive: {
       0: {
+        items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+      },
+      288:{
         items: 2 // 螢幕大小為 0~600 顯示 1 個項目
       },
       768: {
@@ -346,6 +349,9 @@ $(function() {
     // autoWidth: true,
     responsive: {
       0: {
+        items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+      },
+      288:{
         items: 2 // 螢幕大小為 0~600 顯示 1 個項目
       },
       768: {

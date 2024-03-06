@@ -622,19 +622,30 @@
     order: -1;
     background-color: $BGColor-primary;
     position: relative;
+    @media (max-width: 410px){
+      height: 200px;
+    }
     a{
       .L-itemsRanking__pic__img, .M-itemList__pic__img{@include itemCard-picimg;}
     }
     &__wrap{
       @include itemCard-picwrap;
       margin: auto;
+      @media (max-width: 410px) {
+        width: 160px; height: 200px;
+      } 
     }
   }
   &__Ranking{
     width: 35px; height: 63px;
     background-image: url(../images/element_label.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute; top: -5px; left: 5px;
     text-align: center;
+    @media (max-width: 410px) {
+      width: 30px; height: 63px;
+    }
     span{
       font-size: $font-xl;
       font-weight: 600;
@@ -653,6 +664,9 @@
     &__pic{
       position: relative;
       height: calc(250px - 30px);
+      @media (max-width: 410px) {
+        height: calc(200px - 30px);;
+      }
       &__wrap{
         position: relative; top: -30px;
       }

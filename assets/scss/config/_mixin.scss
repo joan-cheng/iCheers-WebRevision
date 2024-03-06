@@ -133,7 +133,7 @@
 @mixin itemCard-picwrap {
     width: 200px; height: 250px;
     display: flex; justify-content: center; align-items: flex-end;
-    margin: auto;
+    
 }
 @mixin itemCard-picimg {
     width: 95%; height: 95%; object-fit: contain;
