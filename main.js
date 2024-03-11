@@ -134,7 +134,7 @@ $(function() {
   // -------------------- B-Carousel
   $(".B-Carousel.owl-carousel").owlCarousel({
     loop: true, // 循環播放
-    margin: 0, // 外距 10px
+    margin: 10, // 外距 10px
     nav: true, // 顯示點點
     autoplay: true,
     autoplayTimeout: 5500,
@@ -385,7 +385,7 @@ $(function() {
   // S_brands
   $(".S_brands__items.owl-carousel").owlCarousel({
     loop: false, // 循環播放
-    margin: 20, // 外距 10px
+    margin: 0, // 外距 10px
     nav: true, // 顯示點點
     // autoWidth: true,
     responsive: {
@@ -431,6 +431,7 @@ $(function() {
     loop: false, // 循環播放
     margin: 0, // 外距 10px
     nav: true, // 顯示點點
+    autoHeight:true,
     // autoWidth: true,
     responsive: {
       0: {
@@ -466,11 +467,11 @@ $(function() {
     }
   });
   // read more
-  $(".Q-articles-items__intro--flip").click(function(){
-      $(".Q-articles-items__intro--paragraph.--more").slideToggle("slow");
-      $(".readmore").toggle();
-      $(".readless").toggle();
-    });
+  // $(".Q-articles-items__intro--flip").click(function(){
+  //     $(".Q-articles-items__intro--paragraph.--more").slideToggle("slow");
+  //     $(".readmore").toggle();
+  //     $(".readless").toggle();
+  //   });
 
   //
   $(document).ready(function () {

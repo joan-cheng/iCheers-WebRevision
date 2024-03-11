@@ -56,8 +56,10 @@
     &__content{
       width: 100%; height: auto;
       line-height: 30px;
-      color: #fff;
-      
+      color: rgba(255, 255, 255, 0.864);
+      &:hover a{
+        color: #fff;
+      }
 
       & span{
         display: inline-block;
@@ -147,6 +149,7 @@
     border: solid $BGColor-labelDark 1px;
     padding: 10px;
     margin-top: 20px;
+    color: rgba(255, 255, 255, 0.747);
     span {
       display: block;
     }

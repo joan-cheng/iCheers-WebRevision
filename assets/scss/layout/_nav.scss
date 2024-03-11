@@ -1,7 +1,7 @@
 //由小到大
 //共用樣式
 .nav{
-  width: 100%; height: auto; min-height: 70px;
+  width: 100%; height: auto; min-height: 60px;
   background-color: #ffffffad;
   backdrop-filter: blur(10px);
   position: fixed;
@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   transition: left 0.3s ease;
   &.hideUp{
-    top: -70px;
+    top: -60px;
   }
   @include largepad{
     &.hideUp{
@@ -24,7 +24,7 @@
 
   //上方導覽列
   &__items{
-    width: 100%; height: 70px;
+    width: 100%; height: 60px;
     max-width: 1280px;
     display: flex;
     margin: auto;
@@ -34,6 +34,7 @@
     flex-direction: row;
     z-index: 99;
     @include largepad{
+      height: 70px;
       gap: 2%;
     }
   }
@@ -43,9 +44,10 @@
 
     &__hamburger{
       position: relative;
-      width: 35px;
-      height: 30px;
+      width: 28px;
+      height: 28px;
       background: transparent;
+      margin-left: 0.5rem;
       cursor: pointer;
       display: block;
       @include largepad{ display: none;}
@@ -55,7 +57,7 @@
       span{
         display: block;
         position: absolute;
-        height: 2.5px;
+        height: 2.2px;
         width: 100%;
         background: $fontColor-light;
         border-radius: 9px;
@@ -64,7 +66,7 @@
         transform: rotate(0deg);
         transition: .25s ease-in-out;
         &:nth-of-type(1) {
-          top: 10%;
+          top: 15%;
           transform-origin: left center;
         }
         &:nth-of-type(2) {
@@ -73,7 +75,7 @@
           transform-origin: left center;
         }
         &:nth-of-type(3) {
-          top: 90%;
+          top: 85%;
           transform-origin: left center;
           transform: translateY(-100%);
         }
@@ -81,8 +83,8 @@
       &.active{
         span:nth-of-type(1){
           transform: rotate(45deg);
-          top: 0px;
-          left: 5px;
+          top: 4.1px;
+          left: 4px;
         }
         span:nth-of-type(2) {
           width: 0%;
@@ -90,14 +92,13 @@
         }
         span:nth-of-type(3) {
           transform: rotate(-45deg);
-          top: 26px;
-          left: 5px;
+          top: 23.9px;
+          left: 4px;
         }
       }
       
     }
     &__logo{
-      
       width: 170px; height: 32px;
       
       background-image: url(../images/iCheersLogo-cn.svg);
@@ -113,7 +114,6 @@
         width: 100%; height: 100%;
       }
     }
-    
     &__searchbar{
         width: 32px; height: 32px;
         overflow: visible;
@@ -134,10 +134,14 @@
           background-color: #fff;
           border-radius: 32px;
           border: solid $BGColor-labelLight 1px;
-          display: flex;
+          display: flex; flex-direction: row-reverse;
           justify-content: space-between;
           align-items: center;
-          padding: 0 10px;
+          padding: 0 1rem;
+          transition: 0.4s;
+          &:hover{
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+          }
           & span{
             width: 24px; height: 24px;
             overflow: hidden;
@@ -193,6 +197,14 @@
             @include desk{
               height: 50px;
               margin: 0;
+            }
+            &:focus{
+              // background-color: red;
+              // border-bottom: $commonColor-primary solid 2px;
+              // border-radius: 5px;
+              outline: none;
+              caret-color: $commonColor-primary;
+              
             }
           }
           .__inputs_searchByPhoto{
@@ -320,19 +332,23 @@
       position: fixed;
       top: 0;
       left: -280px;
+      // background-color: #925565;
       background-color: $BGColor-grayLight;
       transition: left 0.3s ease;
       z-index: 99;
-      padding: calc(10vh) 0;
+      padding-top: calc(10vh);
+      overflow: scroll;
       @include largepad{
-        width: 100%; height: 130px;
+        width: 100%; height: 120px;
         position: absolute;
         top: 0; left: 0;
         flex-direction: row;
+        justify-content: center;
         padding: 70px 2% 0 2%; 
         align-items: flex-end;
         background-color: #e3e0e095;
         backdrop-filter: blur(10px);
+        overflow: hidden;
         &:has(.nav__item__menuWine--active){
           background-color: #946988bf;
           a{ 
@@ -341,7 +357,7 @@
               border-right: #fff solid 1px;
             }
             span{
-              img{top: -64px;}
+              img{top: -48px;}
             }
           }
         }
@@ -353,7 +369,7 @@
               border-right: #fff solid 1px;
             }
             span{
-              img{top: -64px;}
+              img{top: -48px;}
             }
           }
         }
@@ -365,7 +381,7 @@
               border-right: #fff solid 1px;
             }
             span{
-              img{top: -64px;}
+              img{top: -48px;}
             }
           }
         }
@@ -377,8 +393,50 @@
               border-right: #fff solid 1px;
             }
             span{
-              img{top: -64px;}
+              img{top: -48px;}
             }
+          }
+        }
+      }
+      &Gate{
+        background-color: $BGColor-grayLight;
+        // width: 100%; height: 50px;
+        
+        @include largepad{
+          // width: 100%; height: 50px;
+          display: flex; justify-content: center; align-items: center;
+          background-color: transparent;
+        }
+        img{top: 0;}
+        
+        & .nav__item__menu_BnB{
+          background-color: lighten($BGColor-labelDark,20%);
+          padding-left: 20px;
+          border-bottom: solid $BGColor-grayLight 1px;
+          @include largepad{
+            border: none;
+            background-color: transparent;
+            font-size: 1.1rem;
+          }
+        }
+      }
+      &Infos{
+        background-color: lighten($BGColor-labelDark,20%);
+        flex-grow: 1;
+        @include largepad{
+          display: none;
+        }
+      }
+      li:last-child{
+        background-color: #925565;
+        // position: fixed;
+        padding-bottom: calc(10vh);
+        @include largepad{display: none;}
+        a{
+          color: #fff;
+          border-bottom: solid $BGColor-labelLight 0.75px;
+          &:last-child{
+            border: none;
           }
         }
       }
@@ -407,52 +465,20 @@
         span{
           width: 32px; height: 32px; 
           display: inline-block; overflow: hidden; 
-          vertical-align: bottom; position: relative; margin-right: 5px;
+          vertical-align: bottom; 
+          position: relative; 
+          margin-right: 5px;
           opacity: 0.8;
+          @include largepad{
+            width: 24px; height: 24px; 
+            top: -3px;
+          }
         img{
           width: 100%; height: auto; position: absolute; bottom: 0;
         }}
         
       }
-      li:first-child{
-        background-color: $BGColor-grayLight;
-        @include largepad{
-          width: 100%; height: 50px;
-          background-color: transparent;
-          display: flex; 
-          justify-content: center;
-          align-items: center;
-          // gap: 2%;
-        }
-        
-        img{top: 0;}
-        
-        & .nav__item__menu_BnB{
-          background-color: lighten($BGColor-labelDark,20%);
-          padding-left: 20px;
-          border-bottom: solid $BGColor-grayLight 1px;
-          @include largepad{
-            border: none;
-            background-color: transparent;
-            font-size: 1.1rem;
-          }
-        }
-      }
-      li:nth-child(2){
-        background-color: lighten($BGColor-labelDark,20%);
-        flex-grow: 1;
-        @include largepad{display: none;}
-      }
-      li:last-child{
-        background-color: #925565;
-        @include largepad{display: none;}
-        a{
-          color: #fff;
-          &:last-child{
-            border: none;
-          }
-        }
-      }
+      
      
     }
   }
@@ -488,10 +514,14 @@
       display: block;
       line-height: 32px;
       padding: 5px 10px;
+      &:hover{
+        background-color: $BGColor-grayLight;
+      }
       &:not(:last-child){
         border-bottom: solid $BGColor-labelLight 1px;
       }
     }
+    
   }
 }
 .__account:hover .dropdown_content{
@@ -540,6 +570,6 @@
 .radio-inputs .radio input:checked + .name {
   background-color: $fontColor-primary;
   color: #fff;
-  font-weight: 600;
+  // font-weight: 600;
 }
 

@@ -162,7 +162,12 @@ ul{
     &__value {
       display: flex;
     }
-    
+    .__inputs_text{
+      &:focus{
+        border: red solid 1px;
+      }
+    }
+
     &__input {
       display: none;
       

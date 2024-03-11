@@ -5,7 +5,8 @@
 // 由小到大
 // layout
 .layout__doubleColumn{
-  width: 100%;
+  width: 100%; 
+  // max-height: 512px;
   @include max-width;
   padding-top: 20px;
   padding-left: 2%;
@@ -31,6 +32,10 @@
   @include max-width;
   width: 100%; height: auto;
   margin: auto;
+  @include largepad{
+    margin-top: 70px;
+  }
+  
   // z-index: -1;
   .item{
     display: block;
@@ -55,7 +60,7 @@
     width: 100%;
     position: absolute;
     top: 50%;
-    // transform: translateY(-50%);
+    transform: translateY(-50%);
     justify-content: space-between;
     @include largepad{
       display: flex;
@@ -77,8 +82,10 @@
       }
       &.owl-prev{
         &:hover{
-          background-color: rgba(227, 224, 224, 0.3);
-          backdrop-filter: blur(5px);
+          // background-color: rgba(227, 224, 224, 0.3);
+          // backdrop-filter: blur(5px);
+          background-color: transparent;
+          
           opacity: 1;
         }
         span{
@@ -87,14 +94,14 @@
       }
       &.owl-next{
         &:hover{
-          background-color: rgba(227, 224, 224, 0.3);
-          backdrop-filter: blur(5px);
+          background-color: transparent;
           opacity: 1;
         }
       }
     }
   }
   .owl-dots{
+    padding-top: 1rem;
     .owl-dot.active{
       span{
         background-color: $commonColor-primary;
@@ -149,10 +156,14 @@
     }
   }
   &__item{
-    width: 100%; height: 47px;
+    width: 100%; 
+    height: 50px;
     padding: 5px 0;
-    display: flex;
-    gap: 5px;
+    display: flex; justify-content: space-between;
+    gap: 1rem;
+    @include miniphone{
+      height: 47px;
+    }
     span{
       font-size: $font-l;
       display: inline-block;
@@ -160,6 +171,9 @@
       color: #fff;
       padding: 5px 10px;
       border-radius: 5px;
+      flex-shrink: 0;
+      margin-left: 5px;
+      
     }
     a{
       width: 100px; 
@@ -424,7 +438,7 @@
   }
   &__item{
     @include favoriteBTN--show;
-    width: 250px;
+    width: 250px; height: 100%;
     margin: auto;
     display: flex;
     flex-direction: column; justify-content: center; align-items: flex-end;
@@ -435,11 +449,12 @@
     }
   }
   &__name{
-    width: 100%; height: 53px;
+    width: 100%; 
+    flex-grow: 1;
     color: $fontColor-dark;
     @include line-clamp (2);
     a{
-      font-size: $font-l;
+      font-size: $font-m * 1.1;
       line-height: 20px;
       &:hover{
         color: $fontColor-dark;
@@ -897,12 +912,22 @@
       margin-top: 0;
     }
   }
+  .item{
+    display: flex; justify-content: center;
+  }
   &__item{
-    display: flex; flex-direction: column; align-items: center;
+    width: 100%;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
     background-color: lighten($commonColor-highlight,40%);
     margin-top: 170px;
     padding-top: 40px; padding-right: 15px; padding-left: 15px;
     border-radius: 10px;
+    @include desk{
+      width: 90%;
+    }
+    @include largedesk{
+      width: 80%;
+    }
   }
   .owl-item:nth-child(2) .O-articles-activity{
     &__item{
@@ -948,12 +973,12 @@
       display: inline-block;
       color: rgba(255, 255, 255, 0.5);
       background-color: $commonColor-highlight;
-      // padding: 0 10px;
       line-height: 17px;
       border-radius: 20px;
       vertical-align: middle;
       text-align: center;
       transition: 0.4s;
+      margin-top: 1rem;
       &:hover{
         color: rgba(255, 255, 255, 1);
       }
@@ -1006,21 +1031,35 @@
         font-weight: 800;
         color: $commonColor-highlight;
       }
-      .owl-prev::after{
-        content: '看上一篇';
-        border-bottom: $fontColor-dark solid 1px;
+      .owl-prev{
+        &::after{
+          content: '看上一篇';
+          border-bottom: $fontColor-dark solid 1px;
+        }
+        &:hover::after{
+          color: $fontColor-disable;
+          border-bottom: $fontColor-disable solid 1px;
+        }
       }
-      .owl-next::after{
-        content: '看下一篇';
-        border-bottom: $fontColor-dark solid 1px;
+      .owl-next{
+        &::after{
+          content: '看下一篇';
+          border-bottom: $fontColor-dark solid 1px;
+        }
+        &:hover::after{
+          color: $fontColor-disable;
+          border-bottom: $fontColor-disable solid 1px;
+        }
+        
       }
       .disabled{
-        opacity: 0.5;
+        opacity: 0;
         color: $fontColor-disable;
       }
       [class*=owl-]:hover {
         background-color: transparent;
-        color: $fontColor-disable;
+        
+        
       }
     }
   }
@@ -1074,13 +1113,14 @@
         display: none;
         @include largepad{
           display: block;
+          @include line-clamp (10);
         }
       }
     }
     &--flip{
       display: block;
       @include largepad{
-        display: none;
+        // display: none;
       }
       .readmore{
         width: 100%; height: 150px;
@@ -1089,13 +1129,32 @@
         position: absolute; bottom: 0; left: 0;
         display: flex; justify-content: center; align-items: flex-end;
         cursor: pointer;
+        @include largepad{
+          background: transparent;
+          position: relative;
+          height: auto;
+          justify-content: flex-end;
+          &:hover::after{
+            background-color: $commonColor-highlight;
+          }
+        }
         &::after{
-          content: '';
-          width: 40px; height: 40px;
-          display: block;
-          background-image: url(../images/icon_chevron_gray.svg);
-          background-size: 200% auto;
-          background-position: left bottom;
+          content: 'more';
+          height: 30px;
+          padding: 0 20px;
+          font-size: $font-l; line-height: 25px;
+          display: inline-block;
+          color: #fff;
+          background-color: #E9E5E1;
+          border-radius: 20px;
+          text-align: center; vertical-align: middle;
+          box-shadow: 0px 0px 25px #fff;
+          @include largepad{
+            height: 25px; line-height: 20px;
+            padding: 0 10px;
+            margin-top: 0.5rem;
+            transition: 0.4s;
+          }
         }
       }
       .readless{
@@ -1151,15 +1210,25 @@
   // ---------------------- 酒款列表
   &__items{
     width: 100%;
-    @include pad{
-      
-      // padding: 0 5%;
+    .favoriteBTN{
+      top: 20px;
     }
     @include largepad{
       // width: calc(70% - 10%);
       width: calc(100% - 10%);
-      margin: 50px 5% 0 5%;
-      border: $commonColor-highlight solid 1px;
+      margin: 20px 5% 0 5%;
+      // padding: 10px 0;
+      &::before{
+        content: '';
+        width: 100%; height: 95%;
+        display: block;
+        position: absolute;
+        border: $commonColor-highlight solid 1px;
+        top: 50%; transform: translateY(-50%);
+      }
+      .favoriteBTN{
+        top: 20px;
+      }
     }
     @media (min-width: 1000px) {
       width: calc(70% - 10%);
@@ -1192,8 +1261,9 @@
   }
   &__item{
     position: relative;
-    width: 80%; height: 200px;
+    width: 80%; height: 220px;
     margin: auto;
+    padding: 15px 0;
     @include favoriteBTN--show;
     @include pad{
       width: 90%;
@@ -1289,9 +1359,20 @@
       left: 0;
     }
   }
+  .item{
+    display: flex; justify-content: center;
+  }
   &__item{
+    width: 95%;
     background-color: $BGColor-primary;
     display: flex; flex-direction: column;
+    position: relative;
+    @include largepad{
+      width: 90%;
+    }
+    @include largedesk{
+      width: 85%;
+    }
   }
   
   &__name{
@@ -1421,8 +1502,13 @@
     background-color: $BGColor-labelDark;
     color: #fff;
     height: 50px;
-    font-weight: 500;
-    letter-spacing: 0.5rem;
+    
+    h2{
+      font-size: $font-l;
+      font-weight: 500;
+      letter-spacing: 0.5rem;
+      line-height: 50px;
+    }
   }
   &__itemList{
     flex-grow: 1;
@@ -1543,7 +1629,7 @@
       position: relative;
     }
     .U-classification__items{
-      width: calc(100% - 5%); height: 360px;
+      width: calc(100% - 5%); height: 411px;
       display: flex; flex-direction: column; 
       align-items: flex-start;
       flex-wrap: wrap;
@@ -1578,8 +1664,11 @@
       text-align: left;
       background-color: transparent;
       color: $fontColor-secondary;
+      height: 2.5rem;
       margin-bottom: 0.5rem;
-      margin-top: 1rem;
+      vertical-align: bottom;
+      line-height: 2.5rem;
+      // margin-top: 1rem;
       position: relative;
       // padding-left: 0;
       &::after{

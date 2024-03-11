@@ -6,9 +6,15 @@
           <span></span>
           <span></span>
         </label>
-        <h1 class="nav__item nav__item__logo"><a class="nav__item nav__item__logoWrap" href="index.html">iCheers愛酒窩</a></h1>
+        <a class="nav__item nav__item__logo" href="index.html">
+          <h1 class="nav__item nav__item__logoWrap">iCheers愛酒窩</h1>
+        </a>
+        
         <div class="nav__item nav__item__searchbar">
-          <button class="nav__item__searchbar__trigger"><span class="icon_search"><img  src="../assets/images/icon_search.svg" alt=""></span><span class="icon_foto"><img  src="../assets/images/icon_foto.svg" alt=""></span></button>
+          <button class="nav__item__searchbar__trigger" aria-label="快速搜尋">
+            <span class="icon_search"><img  src="../assets/images/icon_search.svg" alt=""></span>
+            <!-- <span class="icon_foto"><img  src="../assets/images/icon_foto.svg" alt=""></span> -->
+          </button>
         </div>
         <div class="nav__item nav__item__infos">
           <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="../assets/images/icon_cwc.svg" alt="線上酒窖"></span>線上酒窖</a>
@@ -73,7 +79,7 @@
             <div class="select-box__value">
               <input class="select-box__input" type="radio" id="4" value="5" name="Type_wine"/>
               <p class="select-box__input-text">甜酒</p>
-            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
           </div>
           <ul class="select-box__list">
             <li>
@@ -115,7 +121,7 @@
             <div class="select-box__value">
               <input class="select-box__input" type="radio" id="Type_spirits_4" value="5" name="Type_spirits"/>
               <p class="select-box__input-text">調和威士忌</p>
-            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
           </div>
           <ul class="select-box__list">
             <li>
@@ -157,7 +163,7 @@
             <div class="select-box__value">
               <input class="select-box__input" type="radio" id="Type_beer_4" value="5" name="Type_beer"/>
               <p class="select-box__input-text">小麥啤酒</p>
-            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
           </div>
           <ul class="select-box__list">
             <li>
@@ -199,7 +205,7 @@
             <div class="select-box__value">
               <input class="select-box__input" type="radio" id="Type_sake_4" value="5" name="Type_sake"/>
               <p class="select-box__input-text">吟釀</p>
-            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
           </div>
           <ul class="select-box__list">
             <li>
@@ -241,7 +247,7 @@
             <div class="select-box__value">
               <input class="select-box__input" type="radio" id="price_4" value="price_4" name="Price"/>
               <p class="select-box__input-text">$2001-$3000</p>
-            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
           </div>
           <ul class="select-box__list">
             <li>
@@ -283,7 +289,7 @@
             <div class="select-box__value">
               <input class="select-box__input" type="radio" id="delivery_4" value="delivery_4" name="Delivery"/>
               <p class="select-box__input-text">超值預購</p>
-            </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
           </div>
           <ul class="select-box__list">
             <li>
@@ -305,46 +311,47 @@
         </div>
         
         <input class="__inputs_text" type="text" placeholder="請輸入關鍵字">
-        <button class="__inputs_searchByPhoto"></button>
+        <!-- <button class="__inputs_searchByPhoto"></button> -->
         <input class="__inputs_submit" type="submit" value="搜尋"> 
       </div>
-      
-      
     </form>
 </nav>
 <div class="overlay"></div>
 <ul class="nav__item__menu">
   <li>
-    <% if (page == 'wine'){ %>
-      <a class="nav__item__menuWine--active" href="index_wine.html"><span class="icon_wine"><img src="../assets/images/icon_wine.svg" alt=""></span>葡萄酒館</a>
-    <% } else{ %>
-      <a href="index_wine.html"><span class="icon_wine"><img src="../assets/images/icon_wine.svg" alt=""></span>葡萄酒館</a>
-      <% } %>  
-      <a class="nav__item__menu_BnB" href="#">找波爾多</a>
-      <a class="nav__item__menu_BnB" href="#">找布根地</a>
-
-    <% if (page == 'spirits'){ %>
-      <a class="nav__item__menuSpirits--active" href="index_spirits.html"><span class="icon_spirits"><img src="../assets/images/icon_spirits.svg" alt=""></span>烈酒館</a>
-    <% } else{ %>
-      <a href="index_spirits.html"><span class="icon_spirits"><img src="../assets/images/icon_spirits.svg" alt=""></span>烈酒館</a>
-      <% } %>  
-
-    <% if (page == 'beer'){ %>
-      <a class="nav__item__menuBeer--active" href="index_beer.html"><span class="icon_beer"><img src="../assets/images/icon_beer.svg" alt=""></span>啤酒館</a>
-    <% } else{ %>
-      <a href="index_beer.html"><span class="icon_beer"><img src="../assets/images/icon_beer.svg" alt=""></span>啤酒館</a>
-      <% } %> 
-
-    <% if (page == 'sake'){ %>  
-      <a class="nav__item__menuSake--active" href="index_sake.html"><span class="icon_sake"><img src="../assets/images/icon_sake.svg" alt=""></span>清酒館</a>
+    <div class="nav__item__menuGate">
+      <% if (page == 'wine'){ %>
+        <a class="nav__item__menuWine--active" href="index_wine.html"><span class="icon_wine"><img src="../assets/images/icon_wine.svg" alt=""></span>葡萄酒館</a>
       <% } else{ %>
-        <a href="index_sake.html"><span class="icon_sake"><img src="../assets/images/icon_sake.svg" alt=""></span>清酒館</a>
+        <a href="index_wine.html"><span class="icon_wine"><img src="../assets/images/icon_wine.svg" alt=""></span>葡萄酒館</a>
+        <% } %>  
+        <a class="nav__item__menu_BnB" href="#">找波爾多</a>
+        <a class="nav__item__menu_BnB" href="#">找布根地</a>
+  
+      <% if (page == 'spirits'){ %>
+        <a class="nav__item__menuSpirits--active" href="index_spirits.html"><span class="icon_spirits"><img src="../assets/images/icon_spirits.svg" alt=""></span>烈酒館</a>
+      <% } else{ %>
+        <a href="index_spirits.html"><span class="icon_spirits"><img src="../assets/images/icon_spirits.svg" alt=""></span>烈酒館</a>
+        <% } %>  
+  
+      <% if (page == 'beer'){ %>
+        <a class="nav__item__menuBeer--active" href="index_beer.html"><span class="icon_beer"><img src="../assets/images/icon_beer.svg" alt=""></span>啤酒館</a>
+      <% } else{ %>
+        <a href="index_beer.html"><span class="icon_beer"><img src="../assets/images/icon_beer.svg" alt=""></span>啤酒館</a>
         <% } %> 
-  </li>
-  <li>
-    <a href="#">進階搜尋</a>
-    <a href="#">近期瀏覽</a>
-    <a href="#">沒有收到確認信?</a>
+  
+      <% if (page == 'sake'){ %>  
+        <a class="nav__item__menuSake--active" href="index_sake.html"><span class="icon_sake"><img src="../assets/images/icon_sake.svg" alt=""></span>清酒館</a>
+        <% } else{ %>
+          <a href="index_sake.html"><span class="icon_sake"><img src="../assets/images/icon_sake.svg" alt=""></span>清酒館</a>
+          <% } %> 
+    </div>
+    <div class="nav__item__menuInfos">
+      <a href="#">追蹤酒款</a>
+      <a href="#">進階搜尋</a>
+      <a href="#">近期瀏覽</a>
+      <a href="#">沒有收到確認信?</a>
+    </div>
   </li>
   <li>
     <a href="#"><span class="icon_account"><img src="../assets/images/icon_account.svg" alt=""></span>登入/加入會員</a>

@@ -2967,7 +2967,7 @@
 			'<span aria-label="' + 'Next' + '">&gt;</span>'
 		],
 		navSpeed: false,
-		navElement: 'button type="button" role="presentation"',
+		navElement: 'button type="button" role="button" ',
 		navContainer: false,
 		navContainerClass: 'owl-nav',
 		navClass: [
@@ -3013,7 +3013,7 @@
 
 		// create DOM structure for absolute navigation
 		if (!settings.dotsData) {
-			this._templates = [ $('<button role="button">')
+			this._templates = [ $('<button aria-label="banner options" role="button">')
 				.addClass(settings.dotClass)
 				.append($('<span>'))
 				.prop('outerHTML') ];
