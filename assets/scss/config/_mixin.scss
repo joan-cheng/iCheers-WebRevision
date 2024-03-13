@@ -73,6 +73,8 @@
 // ----------------- 常用樣式
 // 原價槓掉
 @mixin price-original {
+    text-align: end;
+    
     color: $fontColor-disable;
     font-size: $font-m;
     &::after{

@@ -27,7 +27,7 @@ export default defineConfig({
   // base: '/Repository 的名稱/'
   base: '/iCheers-WebRevision/',
   plugins: [
-    liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
+    liveReload(['./components/**/*.ejs','./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
     moveOutputPlugin(),
   ],
