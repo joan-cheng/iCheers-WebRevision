@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "boostrap": "^2.0.0",
+    "bootstrap-icons": "^1.11.3",
     "dist": "^0.1.2",
     "gh-pages": "^5.0.0",
     "glob": "^10.2.2",

@@ -1,5 +1,6 @@
 //由小到大
 //共用樣式
+
 .nav{
   width: 100%; height: auto; min-height: 60px;
   background-color: #ffffffad;
@@ -13,12 +14,11 @@
   align-items: center;
   flex-wrap: wrap;
   transition: left 0.3s ease;
-  &.hideUp{
+  transition: top .4s ease-in-out;
+  .hideUp &{
     top: -60px;
-  }
-  @include largepad{
-    &.hideUp{
-      top: 0px;
+    @include largepad{
+      top: 0;
     }
   }
 
@@ -412,6 +412,7 @@
           // width: 100%; height: 50px;
           display: flex; justify-content: center; align-items: center;
           background-color: transparent;
+          // column-gap: 5%;
         }
         img{top: 0;}
         
@@ -456,12 +457,13 @@
         border-bottom: solid $BGColor-labelLight 1px;
         transition: background-color 0.3s ease;
         line-height: 32px;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 20px; padding-left: 20px; 
+        
         position: relative;
         @include nowrap;
         @include largepad{
           border: none;
+          padding-right: 40px; padding-left: 40px;
           &:not(:last-child)::after{
             content: '';
             width: 1px; height: 15px;

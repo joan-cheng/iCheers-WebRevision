@@ -58,20 +58,6 @@ ul{
   }
 }
 
-// -------------------- 首頁-看更多按鈕
-div[class$=__goformore]{
-  width: 100%; text-align: right;
-  padding: 0 10% 1rem 10%;
-  a{
-    color: $fontColor-light;
-    border-bottom: $fontColor-light solid 1px;
-    transition: 0.4s;
-    &:hover{
-      color: $commonColor-highlight;
-      border-bottom: $commonColor-highlight solid 1px;
-    }
-  }
-}
 
 // 時態變化------price
 .--fast{color: $deliveryColor-fast;}
@@ -119,6 +105,41 @@ div[class$=__goformore]{
   &:hover{
     background-color: $deliveryColor-preorder;
     background-position: left bottom;
+  }
+}
+
+// -------------------- 首頁-看更多按鈕
+div[class$=__goformore]{
+  width: 100%; text-align: right;
+  padding: 0 10% 1rem 10%;
+  a{
+    color: $fontColor-light;
+    border-bottom: $fontColor-light solid 1px;
+    transition: 0.4s;
+    &:hover{
+      color: $commonColor-highlight;
+      border-bottom: $commonColor-highlight solid 1px;
+    }
+  }
+}
+
+// -------------------- 麵包屑共用樣式
+div[class$=__breadcrumb]{
+  line-height: 50px;
+  span{
+    font-size: $font-m;
+    color: $fontColor-secondary;
+    a{
+      font-size: $font-m;
+      color: $fontColor-secondary;
+    }
+    &:not(:last-child)::after{
+      content: '>';
+      padding: 0 5px;
+      font-size: $font-s;
+      font-family: $fontFamily-chevron;
+      vertical-align: middle;
+    }
   }
 }
 

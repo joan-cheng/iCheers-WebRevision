@@ -1,10 +1,12 @@
 import './assets/scss/all.scss';
-// jquery
-// import * as jquery from "./assets/js/jquery-3.7.1.min";
+
+import './assets/js/catalogue.data';
+
 // bootstrap
 import './assets/js/bootstrap.bundle.min';
 // Owl Carousel
 import './assets/js/owl.carousel';
+
 
 console.log("Hello world!");
 
@@ -39,7 +41,27 @@ $(function() {
       }
   });
   
-  // nav
+  // ------------------- nav
+  // 手機版向下滑動時收起nav，向上滑動時顯示
+  $(document).ready(function(){
+    const bodyClass = $('body').addClass('hideUp');
+    let lastScrollY = 0;
+  
+    $(window).scroll(function(){
+      // 增加判斷螢幕寬度小於 768px 的條件
+      if ($(window).width() < 768) {
+        const st = $(this).scrollTop();
+        // 條件判斷簡化
+        if (st < 200 || st <= lastScrollY || st === 0) {
+          bodyClass.removeClass('hideUp');
+        } else {
+          bodyClass.addClass('hideUp');
+        }
+        lastScrollY = st;
+      }
+    });
+  });
+
   // menu
   $(document).ready(function () {
     const targetList = $('.nav__item__menu'); // 宣告 targetList
@@ -504,4 +526,58 @@ $(function() {
         });
     });
   });
+
+  // 簡目頁手機版
+  // 當 radio 狀態為:checked時的事件處理程序
+  $('input[name=catalogueGate]').on('change', function() {
+    // 隱藏所有的 select-box
+    $('.catalogue__filterPanel__itemGroups').hide();
+
+    // 獲取選中的 radio 的 name 屬性值
+    var listName = $(this).attr('data-target');
+
+    // 顯示對應的 select-box
+    $('.catalogue__filterPanel__itemGroups[id=' + listName + ']').show();
+  });
+
+  // 初始時觸發一次，確保頁面加載時顯示正確的 select-box
+  $('input[name=catalogueGate]:checked').trigger('change');
+
+  // ------------------------------- catalogue-filterPanel 搜尋增加選項 popup
+  $(document).ready(function(){
+    // 點擊 .select-box__trigger 展開 .catalogue__filterPanel__searchList
+    $('#catalogue-trigger').on('click', function(){
+        $('#catalogue-popup').toggleClass('open');
+    });
+    
+    // 點擊 .catalogue__filterPanel__item 關閉 .catalogue__filterPanel__searchList
+    $('.catalogue__filterPanel__item').on('click', function(){
+        $('#catalogue-popup').removeClass('open');
+    });
+
+    // 點擊黑底關閉 .catalogue__filterPanel__searchList
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('#catalogue-popup').length &&
+            !$(e.target).closest('#catalogue-trigger').length) {
+            $('#catalogue-popup').removeClass('open');
+        }
+    });
+  });
+  
+  // ------------------------------- catalogue-filterPanel 國家與產區 子選單列表
+  // 當 label 被點擊時執行
+  $('.catalogue-countryItem').click(function(){
+    // 如果被點擊的 label 裡的 input 是被選中的
+    if($(this).find('input').is(':checked')){
+        // 將 .active 加入到被點擊的 label 中
+        $(this).addClass('active');
+    } else {
+        // 否則將 .active 移除
+        $(this).removeClass('active');
+    }
+  });
+
+  // ------------------------------- catalogue-filterPaneln 關閉/開啟搜尋面板
+  
+  
 });

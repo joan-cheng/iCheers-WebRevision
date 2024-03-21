@@ -39,7 +39,7 @@
       <div class="__inputs">
         <div class="radio-inputs">
           <label class="radio">
-            <input type="radio" name="Gate" data-target="Type_wine" checked="">
+            <input type="radio" name="Gate" data-target="Type_wine" checked="checked">
             <span class="name">葡萄酒</span>
           </label>
           <label class="radio">
@@ -326,8 +326,9 @@
       <% } else{ %>
         <a href="index_wine.html"><span class="icon_wine"><img src="../assets/images/icon_wine.svg" alt=""></span>葡萄酒館</a>
         <% } %>  
-        <a class="nav__item__menu_BnB" href="#">找波爾多</a>
-        <a class="nav__item__menu_BnB" href="#">找布根地</a>
+        <!-- 第一階段隱藏波布專區 -->
+        <!-- <a class="nav__item__menu_BnB" href="#">找波爾多</a>
+        <a class="nav__item__menu_BnB" href="#">找布根地</a> -->
   
       <% if (page == 'spirits'){ %>
         <a class="nav__item__menuSpirits--active" href="index_spirits.html"><span class="icon_spirits"><img src="../assets/images/icon_spirits.svg" alt=""></span>烈酒館</a>
@@ -349,7 +350,7 @@
     </div>
     <div class="nav__item__menuInfos">
       <a href="#">追蹤酒款</a>
-      <a href="#">進階搜尋</a>
+      <a href="catalogue.html">進階搜尋</a>
       <a href="#">近期瀏覽</a>
       <a href="#">沒有收到確認信?</a>
     </div>
