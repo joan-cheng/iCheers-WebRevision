@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="讓你窩在家就能享受葡萄酒，市面上品項最齊全的酒類網路平台，超過上萬款優質酒品可供選擇，窩在家裡、即可享受美酒低溫宅配到府，輕裝出遊、抵達民宿馬上開趴！
+    ">
+    <meta property="og:title" content="iCheers愛酒窩-葡萄酒館搜尋結果" />
+    <!-- <meta property="og:image" content="預覽圖 URL" /> -->
+    <meta property="og:description" content="讓你窩在家就能享受葡萄酒" />
+    <title>iCheers愛酒窩-葡萄酒館-分類找酒搜尋結果</title>
+    <!-- third-party issues -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="https://www.icheers.tw/iCheers/Content/images/drop.ico"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- 定義變數 -->
+    
+    <script type="module" crossorigin src="/iCheers-WebRevision/assets/main-c264501a.js"></script>
+    <link rel="stylesheet" href="/iCheers-WebRevision/assets/main-9b8fcfde.css">
+  </head>
+  <body>
+    <nav class="nav">
+    <div class="nav__items">
+        <label class="nav__item nav__item__hamburger" for="burger">
+          <input type="checkbox" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <a class="nav__item nav__item__logo" href="index.html">
+          <h1 class="nav__item nav__item__logoWrap">iCheers愛酒窩</h1>
+        </a>
+        
+        <div class="nav__item nav__item__searchbar">
+          <button class="nav__item__searchbar__trigger" aria-label="超快速找酒">
+            <span class="trigger_text">超快速找酒</span> 
+            <span class="trigger_icon_search"><img  src="/iCheers-WebRevision/images/icon_search-b285b984.svg" alt=""></span>
+            <!-- <span class="icon_foto"><img  src="../assets/images/icon_foto.svg" alt=""></span> -->
+          </button>
+        </div>
+        <div class="nav__item nav__item__infos">
+          <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="/iCheers-WebRevision/images/icon_cwc-4bb3ff74.svg" alt="線上酒窖"></span>線上酒窖</a>
+          <!-- 未登入 -->
+          <!-- <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="../assets/images/icon_account.svg" alt="登入/加入會員"></span>登入/加入會員</a> -->
+          <!-- 已登入 -->
+          <div class="nav__item__info __account">
+            <a class="" href="#"><span class="icon_cwc"><img src="/iCheers-WebRevision/images/icon_account-e22082ed.svg" alt="登入/加入會員"></span>ifen***，您好</a>
+            <div class="dropdown_content">
+              <a href="">會員專區</a>
+              <a href="">訂單記錄</a>
+            </div>
+          </div>
+          <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="/iCheers-WebRevision/images/icon_line_nav-5c043677.svg" alt="加入官方line"></span></a>
+          <a class="nav__item__info" href="#"><span class="icon_cwc"><img src="/iCheers-WebRevision/images/icon_favorite-0b597b23.svg" alt="追蹤清單"></span></a>
+          <a class="nav__item__info __mylist" href="#"><span class="icon_mylist"><img src="/iCheers-WebRevision/images/icon_mylist-7313cf9a.svg" alt="我的清單"></span><span class="icon_mylist_number">10</span></a>
+        </div>
+        
+    </div>
+    <form class="nav__item__searchbar__form" style="display: none;" action="">
+      <div class="__inputs">
+        <div class="radio-inputs">
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_wine" checked="checked">
+            <span class="name">葡萄酒</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_spirits">
+            <span class="name">烈酒</span>
+          </label>  
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_beer">
+            <span class="name">啤酒</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="Gate" data-target="Type_sake">
+            <span class="name">清酒</span>
+          </label>
+        </div>
+      </div>
+      
+      <div class="__inputs">
+        <!-- 類型找酒--wine -->
+        <div class="select-box select-box__type" id="Type_wine">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="0" value="1" name="Type_wine" checked="checked"/>
+              <p class="select-box__input-text">葡萄酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="1" value="2" name="Type_wine"/>
+              <p class="select-box__input-text">紅酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="2" value="3" name="Type_wine"/>
+              <p class="select-box__input-text">白酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="3" value="4" name="Type_wine"/>
+              <p class="select-box__input-text">粉紅酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="4" value="5" name="Type_wine"/>
+              <p class="select-box__input-text">甜酒</p>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="0" aria-hidden="aria-hidden">葡萄酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="1" aria-hidden="aria-hidden">紅酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="2" aria-hidden="aria-hidden">白酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="3" aria-hidden="aria-hidden">粉紅酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="4" aria-hidden="aria-hidden">甜酒</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 類型找酒--spirits -->
+        <div class="select-box select-box__type" id="Type_spirits" style="display: none;">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_0" value="1" name="Type_spirits" checked="checked"/>
+              <p class="select-box__input-text">烈酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_1" value="2" name="Type_spirits"/>
+              <p class="select-box__input-text">單一麥芽威士忌</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_2" value="3" name="Type_spirits"/>
+              <p class="select-box__input-text">調和麥芽威士忌</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_3" value="4" name="Type_spirits"/>
+              <p class="select-box__input-text">單一穀物威士忌</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_spirits_4" value="5" name="Type_spirits"/>
+              <p class="select-box__input-text">調和威士忌</p>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="Type_spirits_0" aria-hidden="aria-hidden">烈酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_1" aria-hidden="aria-hidden">單一麥芽威士忌</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_2" aria-hidden="aria-hidden">調和麥芽威士忌</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_3" aria-hidden="aria-hidden">單一穀物威士忌</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_spirits_4" aria-hidden="aria-hidden">調和威士忌</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 類型找酒--beer -->
+        <div class="select-box select-box__type" id="Type_beer" style="display: none;">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_0" value="1" name="Type_beer" checked="checked"/>
+              <p class="select-box__input-text">啤酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_1" value="2" name="Type_beer"/>
+              <p class="select-box__input-text">各種愛爾</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_2" value="3" name="Type_beer"/>
+              <p class="select-box__input-text">梨子&蘋果酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_3" value="4" name="Type_beer"/>
+              <p class="select-box__input-text">即飲調酒</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_beer_4" value="5" name="Type_beer"/>
+              <p class="select-box__input-text">小麥啤酒</p>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="Type_beer_0" aria-hidden="aria-hidden">啤酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_1" aria-hidden="aria-hidden">各種愛爾</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_2" aria-hidden="aria-hidden">梨子&蘋果酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_3" aria-hidden="aria-hidden">即飲調酒</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_beer_4" aria-hidden="aria-hidden">小麥啤酒</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 類型找酒--sake -->
+        <div class="select-box select-box__type" id="Type_sake" style="display: none;">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_0" value="1" name="Type_sake" checked="checked"/>
+              <p class="select-box__input-text">清酒類型</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_1" value="2" name="Type_sake"/>
+              <p class="select-box__input-text">純米大吟釀</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_2" value="3" name="Type_sake"/>
+              <p class="select-box__input-text">大吟釀</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_3" value="4" name="Type_sake"/>
+              <p class="select-box__input-text">純米吟釀</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="Type_sake_4" value="5" name="Type_sake"/>
+              <p class="select-box__input-text">吟釀</p>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="Type_sake_0" aria-hidden="aria-hidden">清酒類型</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_1" aria-hidden="aria-hidden">純米大吟釀</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_2" aria-hidden="aria-hidden">大吟釀</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_3" aria-hidden="aria-hidden">純米吟釀</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="Type_sake_4" aria-hidden="aria-hidden">吟釀</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 價位分佈 -->
+        <div class="select-box">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_0" value="price_0" name="Price" checked="checked"/>
+              <p class="select-box__input-text">所有價位</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_1" value="price_1" name="Price"/>
+              <p class="select-box__input-text">低於$500</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_2" value="price_2" name="Price"/>
+              <p class="select-box__input-text">$500-$1,000</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_3" value="price_3" name="Price"/>
+              <p class="select-box__input-text">$1,001-$2,000</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="price_4" value="price_4" name="Price"/>
+              <p class="select-box__input-text">$2,001-$3,000</p>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="price_0" aria-hidden="aria-hidden">所有價位</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_1" aria-hidden="aria-hidden">低於$500</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_2" aria-hidden="aria-hidden">$500-$1,000</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_3" aria-hidden="aria-hidden">$1,001-$2,000</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="price_4" aria-hidden="aria-hidden">$2,001-$3,000</label>
+            </li>
+          </ul>
+        </div>
+        <!-- 到貨時間 -->
+        <div class="select-box">
+          <div class="select-box__current" tabindex="1">
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_0" value="delivery_0" name="Delivery" checked="checked"/>
+              <p class="select-box__input-text">到貨時間</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_1" value="delivery_1" name="Delivery"/>
+              <p class="select-box__input-text">雙北當日配</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_2" value="delivery_2" name="Delivery"/>
+              <p class="select-box__input-text">快速到貨</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_3" value="delivery_3" name="Delivery"/>
+              <p class="select-box__input-text">一般到貨</p>
+            </div>
+            <div class="select-box__value">
+              <input class="select-box__input" type="radio" id="delivery_4" value="delivery_4" name="Delivery"/>
+              <p class="select-box__input-text">超值預購</p>
+            </div><img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+          </div>
+          <ul class="select-box__list">
+            <li>
+              <label class="select-box__option" for="delivery_0" aria-hidden="aria-hidden">到貨時間</label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_1" aria-hidden="aria-hidden">雙北當日配<span>兩點下單今天到</span></label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_2" aria-hidden="aria-hidden">快速到貨<span>三點下單隔天到</span></label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_3" aria-hidden="aria-hidden">一般到貨<span>3-5個工作天</span></label>
+            </li>
+            <li>
+              <label class="select-box__option" for="delivery_4" aria-hidden="aria-hidden">超值預購</label>
+            </li>
+          </ul>
+        </div>
+        
+        <input class="__inputs_text" type="text" placeholder="請輸入關鍵字">
+        <!-- <button class="__inputs_searchByPhoto"></button> -->
+        <input class="__inputs_submit" type="submit" value="搜尋"> 
+      </div>
+    </form>
+</nav>
+<div class="overlay"></div>
+<ul class="nav__item__menu">
+  <li>
+    <div class="nav__item__menuGate">
+      
+        <a class="nav__item__menuWine--active" href="index_wine.html"><span class="icon_wine"><img src="/iCheers-WebRevision/images/icon_wine-43fb901f.svg" alt=""></span>葡萄酒館</a>
+        
+        <!-- 第一階段隱藏波布專區 -->
+        <!-- <a class="nav__item__menu_BnB" href="#">找波爾多</a>
+        <a class="nav__item__menu_BnB" href="#">找布根地</a> -->
+  
+      
+        <a href="index_spirits.html"><span class="icon_spirits"><img src="/iCheers-WebRevision/images/icon_spirits-93d48fec.svg" alt=""></span>烈酒館</a>
+          
+  
+      
+        <a href="index_beer.html"><span class="icon_beer"><img src="/iCheers-WebRevision/images/icon_beer-aad2af2c.svg" alt=""></span>啤酒館</a>
+         
+  
+      
+          <a href="index_sake.html"><span class="icon_sake"><img src="/iCheers-WebRevision/images/icon_sake-65969320.svg" alt=""></span>清酒館</a>
+           
+    </div>
+    <div class="nav__item__menuInfos">
+      <a href="#">追蹤酒款</a>
+      <a href="catalogue.html">進階搜尋</a>
+      <a href="#">近期瀏覽</a>
+      <a href="#">沒有收到確認信?</a>
+    </div>
+  </li>
+  <li>
+    <a href="#"><span class="icon_account"><img src="/iCheers-WebRevision/images/icon_account-e22082ed.svg" alt=""></span>登入/加入會員</a>
+    <a href="#"><span class="icon_cwc"><img src="/iCheers-WebRevision/images/icon_cwc-4bb3ff74.svg" alt=""></span>線上酒窖</a>
+  </li>
+</ul>
+    <!-- 麵包屑 -->
+    <div class="catalogue__breadcrumb"><span><a href="index.html">首頁</a></span><span><a href="index_wine.html">葡萄酒館</a></span><span>分類找酒</span></div>
+    <!-- 篩選器面板 -->
+    <section class="catalogue__filterPanel">
+    <div class="catalogue__filterPanel__result">
+        <h2 class="catalogue__filterPanel__title">我們找到了<span>6,418</span>款</h2>
+        <div class="catalogue__filterPanel__options">依 
+            <label class="catalogue__filterPanel__item" title="有庫存">有庫存<input type="checkbox" name="instore" id="" checked></label>
+            <label class="catalogue__filterPanel__item" title="法國">法國<input type="checkbox" value="法國" checked></label>
+        </div>
+        <button class="catalogue__filterPanel__advancedSearch" type="button">縮小範圍</button>
+    </div>
+    <form class="catalogue__filterPanel__wrap" id="filterPanel-wrap" style="display: none;">
+        <div class="catalogue__filterPanel__wrapTitle"><h3>縮小搜尋範圍</h3><button type="button" class="catalogue__filterPanel__closeBTN"></button></div>
+        <!-- 搜尋範圍 -->
+        <div class="catalogue__filterPanel__itemGroup" data-type="across-type">
+            <div class="catalogue__filterPanel__itemsHeader">
+                <span class="catalogue__filterPanel__itemsTitle">搜尋範圍</span>
+            </div>
+            <div class="catalogue__filterPanel__items">
+                <div class="catalogue__filterPanel__selectGate">
+                    <label >
+                        <input type="radio" name="catalogueGate" data-target="list_wine" checked="checked">
+                        葡萄酒
+                    </label>
+                    <label >
+                        <input type="radio" name="catalogueGate" data-target="list_spirits">
+                        烈酒
+                    </label>
+                    <label >
+                        <input type="radio" name="catalogueGate" data-target="list_beer">
+                        啤酒
+                    </label>
+                    <label >
+                        <input type="radio" name="catalogueGate" data-target="list_sake">
+                        清酒
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- 葡萄酒館 -->
+        <div class="catalogue__filterPanel__itemGroups" id="list_wine">
+            <!-- 熱門搜尋 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">熱門搜尋</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">頂級名酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">快速到貨<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">超值預定<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">自然酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">橘酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">陶甕酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">無酒精<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <button type="button" aria-label="">確認</button>
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 類型 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">類型</span>
+                    <span>
+                        <button type="button" class="catalogue__filterPanel__originalBTN" aria-label="">切換原文</button>
+                    </span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">紅酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">白酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">粉紅酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">氣泡酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">甜酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">加烈酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 國家與產區 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">國家與產區</span>
+                    <span>
+                        <button type="button" class="catalogue__filterPanel__originalBTN" aria-label="">切換原文</button>
+                        <button type="button" class="catalogue__filterPanel__originPlaceBTN" aria-label="">產區列表</button>
+                    </span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">法國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li>
+                                    <label class="catalogue__filterPanel__item catalogue-countryItem" title="波爾多">波爾多<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="波爾多"></label>
+                                    <ul class="catalogue__filterPanel__subitems">
+                                        <li><label class="catalogue__filterPanel__item" title="格拉夫">格拉夫<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="格拉夫"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="瑪歌">瑪歌<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="瑪歌"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="波雅克">波雅克<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="波雅克"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="里斯塔克-梅多克">里斯塔克-梅多克<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="里斯塔克-梅多克"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="上梅多克">上梅多克<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="上梅多克"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="拉隆-玻美候">拉隆-玻美候<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="拉隆-玻美候"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="兩海之間">兩海之間<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="兩海之間"></label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label class="catalogue__filterPanel__item catalogue-countryItem" title="布根地">布根地<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="布根地"></label>
+                                    <ul class="catalogue__filterPanel__subitems">
+                                        <li><label class="catalogue__filterPanel__item" title="夏布利">夏布利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="夏布利"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="夏隆內丘">夏隆內丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="夏隆內丘"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="伯恩丘">伯恩丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="伯恩丘"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="夜丘">夜丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="夜丘"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="上伯恩丘">上伯恩丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="上伯恩丘"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="上夜丘">上夜丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="上夜丘"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="馬貢">馬貢<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="馬貢"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="聖布里">聖布里<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="聖布里"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="布根地全品種混釀">布根地全品種混釀<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="布根地全品種混釀"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="布根地丘">布根地丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="布根地丘"></label></li>
+                                    </ul>
+                                </li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="香檳">香檳<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="香檳"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="隆河谷">隆河谷<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="隆河谷"></label> </li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="羅亞爾河谷">羅亞爾河谷<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="羅亞爾河谷"></label> </li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="侏羅">侏羅<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="侏羅"></label> </li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="薄酒萊">薄酒萊<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="薄酒萊"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="阿爾薩斯">阿爾薩斯<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="阿爾薩斯"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="陸格多克">陸格多克<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="陸格多克"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="胡西雍">胡西雍<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="胡西雍"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="普班旺期">普班旺期<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="普班旺期"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="西南產區">西南產區<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="西南產區"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="薩瓦">薩瓦<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="薩瓦"></label> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" id="" title="頂級名酒">義大利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="阿布魯佐">阿布魯佐<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="阿布魯佐"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="薩丁尼亞">薩丁尼亞<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="薩丁尼亞"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="坎帕尼亞">坎帕尼亞<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="坎帕尼亞"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="西西里">西西里<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="西西里"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="托斯卡尼">托斯卡尼<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="托斯卡尼"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">美國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="加州">加州<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="加州"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="奧立岡">奧立岡<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="奧立岡"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="華盛頓">華盛頓<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="華盛頓"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">西班牙<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="安達露西亞">安達露西亞<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="安達露西亞"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="亞拉岡">亞拉岡<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="亞拉岡"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="馬德里">馬德里<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="馬德里"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">澳洲<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="昆士蘭">昆士蘭<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="昆士蘭"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="南澳">南澳<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="南澳"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="維多利亞">維多利亞<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="維多利亞"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">智利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="阿空加瓜">阿空加瓜<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="阿空加瓜"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="中央谷地">中央谷地<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="中央谷地"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="科金博">科金博<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="科金博"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">德國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="萊茵高">萊茵高<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="萊茵高"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="法茲">法茲<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="法茲"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="萊茵黑森">萊茵黑森<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="萊茵黑森"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">紐西蘭<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="霍克灣">霍克灣<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="霍克灣"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="馬爾堡">馬爾堡<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="馬爾堡"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="馬丁堡">馬丁堡<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="馬丁堡"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">阿根廷<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="門多薩">門多薩<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="門多薩"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="利奧哈">利奧哈<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="利奧哈"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="薩爾塔">薩爾塔<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="薩爾塔"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">奧地利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="下奧地利">下奧地利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="下奧地利"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="布爾根蘭">布爾根蘭<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="布爾根蘭"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="維也納">維也納<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="維也納"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">葡萄牙<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="百拉達">百拉達<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="百拉達"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="里斯本">里斯本<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="里斯本"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="馬德拉">馬德拉<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="馬德拉"></label></li>
+                            </ul>
+                        </li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">日本<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">南非<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">台灣<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">希臘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">匈牙利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">黎巴嫩<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">喬治亞<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">大韓民國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 品種 -->
+            <div class="catalogue__filterPanel__itemGroup" data-type="grape-varieties">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">品種</span>
+                    <span>
+                        <button type="button" class="catalogue__filterPanel__originPlaceBTN" aria-label="">品種列表</button>
+                    </span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <!-- 品種--wine -->
+                    <div tabindex="1">
+                        <ul id="searchResultsShow"></ul>
+                    </div>
+                    
+                    <div class="catalogue__filterPanel__inputSearch">
+                        <button id="catalogue-trigger" class="catalogue__filterPanel__triggerBTN" type="button" aria-label="新增葡萄品種" data-target="#catalogue-popup">新增品種選項<i class="bi bi-plus"></i></button>
+
+                        <div class="catalogue__filterPanel__searchList" id="catalogue-popup">
+                            <div>
+                                <input type="text" id="searchInput" placeholder="請輸入品種關鍵字">
+                                <button type="button" id="searchButton"><i class="bi bi-search"></i></button>
+                            </div>
+                            <ul id="searchResults"></ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- 容量 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">容量</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <div class="select-box" id="wine_capacity">
+                        <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-000" value="1" name="wine_capacity" checked="checked"/>
+                                <p class="select-box__input-text">所有容量</p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-001" value="2" name="wine_capacity"/>
+                                <p class="select-box__input-text">750ml<span class="catalogue__filterPanel__itemNumber">(10105)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-002" value="3" name="wine_capacity"/>
+                                <p class="select-box__input-text">375ml<span class="catalogue__filterPanel__itemNumber">(295)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-003" value="4" name="wine_capacity"/>
+                                <p class="select-box__input-text">1.5L<span class="catalogue__filterPanel__itemNumber">(483)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-004" value="5" name="wine_capacity"/>
+                                <p class="select-box__input-text">187ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-005" value="6" name="wine_capacity"/>
+                                <p class="select-box__input-text">200ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-006" value="7" name="wine_capacity"/>
+                                <p class="select-box__input-text">250ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-007" value="8" name="wine_capacity"/>
+                                <p class="select-box__input-text">440ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-008" value="9" name="wine_capacity"/>
+                                <p class="select-box__input-text">500ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-009" value="10" name="wine_capacity"/>
+                                <p class="select-box__input-text">620ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-010" value="11" name="wine_capacity"/>
+                                <p class="select-box__input-text">700ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-011" value="12" name="wine_capacity"/>
+                                <p class="select-box__input-text">720ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-012" value="13" name="wine_capacity"/>
+                                <p class="select-box__input-text">730ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                        </div>
+                        <ul class="select-box__list">
+                            <li>
+                                <label class="select-box__option" for="capacity-000" aria-hidden="aria-hidden">所有容量</label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-001" aria-hidden="aria-hidden">750ml<span class="catalogue__filterPanel__itemNumber">(10105)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-002" aria-hidden="aria-hidden">375ml<span class="catalogue__filterPanel__itemNumber">(295)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-003" aria-hidden="aria-hidden">1.5L<span class="catalogue__filterPanel__itemNumber">(483)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-004" aria-hidden="aria-hidden">187ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-005" aria-hidden="aria-hidden">200ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-006" aria-hidden="aria-hidden">250ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-007" aria-hidden="aria-hidden">440ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-008" aria-hidden="aria-hidden">500ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-009" aria-hidden="aria-hidden">620ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-010" aria-hidden="aria-hidden">700ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-011" aria-hidden="aria-hidden">720ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-012" aria-hidden="aria-hidden">730ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 價位 -->
+            <div class="catalogue__filterPanel__itemGroup" data-type="wine-price">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">價位</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="300-500"><span>300</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="501-1000"><span>500</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="1001-2000"><span>1,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="2001-3000"><span>2,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="3001-4000"><span>3,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="4001-5000"><span>4,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="5000以上"><span>5,000+</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <div class="catalogue__filterPanel__itemsWrap">
+                        <input type="text" name="" id="" placeholder="$ 300">
+                        <input type="text" name="" id="" placeholder="$ 5,000 以上">
+                    </div>
+                </div>
+            </div>
+            <!-- 年份 -->
+            <div class="catalogue__filterPanel__itemGroup" data-type="wine-year">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">年份</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="NV"><span>NV</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="1930以前"><span>1930</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="1931-1980"><span>1980</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="1981-1999"><span>1999</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="2000-2009"><span>2009</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="2010-2019"><span>2019</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="2020-2024"><span>2024</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <div class="catalogue__filterPanel__itemsWrap">
+                        <input type="text" name="" id="" placeholder="1930">
+                        <input type="text" name="" id="" placeholder="2024">
+                    </div>
+                </div>
+            </div>
+            <!-- 評價 -->
+            <!-- 等級 -->
+        </div>
+        <!-- 烈酒館 -->
+        <div class="catalogue__filterPanel__itemGroups" id="list_spirits" style="display: none;">
+            <!-- 烈酒館-熱門搜尋 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">熱門搜尋</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="快速到貨">快速到貨<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="快速到貨"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="超值預訂">超值預訂<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="超值預訂"></label></li>
+                        
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 烈酒館-類型 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">類型</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="單一麥芽威士忌">單一麥芽威士忌<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="單一麥芽威士忌"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="調和麥芽威士忌">調和麥芽威士忌<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="調和麥芽威士忌"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="單一穀物威士忌">單一穀物威士忌<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="單一穀物威士忌"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="調和威士忌">調和威士忌<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="調和威士忌"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="獨立裝瓶廠威士忌">獨立裝瓶廠威士忌<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="獨立裝瓶廠威士忌"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="原酒威士忌">原酒威士忌<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="原酒威士忌"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="琴酒">琴酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="琴酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="蘭姆酒">蘭姆酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="蘭姆酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="伏特加">伏特加<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="伏特加"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="苦艾酒">苦艾酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="苦艾酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="龍舌蘭">龍舌蘭<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="龍舌蘭"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="利口酒">利口酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="利口酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="梅斯卡">梅斯卡<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="梅斯卡"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="調酒相關">調酒相關<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="調酒相關"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="烈酒">烈酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="烈酒"></label></li>
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 烈酒館-國家與產區 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">國家與產區</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="蘇格蘭">蘇格蘭<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="蘇格蘭"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="日本">日本<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="日本"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="法國">法國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="法國"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="台灣">台灣<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="台灣"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="義大利">義大利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="義大利"></label></li>
+                        
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 烈酒館-特殊風味 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">特殊風味</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="波本桶">波本桶<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="波本桶"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="雪莉桶">雪莉桶<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="雪莉桶"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="泥煤">泥煤<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="泥煤"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="歐露羅素雪莉桶">歐露羅素雪莉桶<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="歐露羅素雪莉桶"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="美國白橡木桶">美國白橡木桶<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="美國白橡木桶"></label></li>
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 烈酒館-容量 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">容量</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <div class="select-box" id="spirits_capacity">
+                        <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-000" value="1" name="spirits_capacity" checked="checked"/>
+                                <p class="select-box__input-text">所有容量</p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-001" value="2" name="spirits_capacity"/>
+                                <p class="select-box__input-text">750ml<span class="catalogue__filterPanel__itemNumber">(10105)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-002" value="3" name="spirits_capacity"/>
+                                <p class="select-box__input-text">375ml<span class="catalogue__filterPanel__itemNumber">(295)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-003" value="4" name="spirits_capacity"/>
+                                <p class="select-box__input-text">1.5L<span class="catalogue__filterPanel__itemNumber">(483)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-004" value="5" name="spirits_capacity"/>
+                                <p class="select-box__input-text">187ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-005" value="6" name="spirits_capacity"/>
+                                <p class="select-box__input-text">200ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-006" value="7" name="spirits_capacity"/>
+                                <p class="select-box__input-text">250ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-007" value="8" name="spirits_capacity"/>
+                                <p class="select-box__input-text">440ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-008" value="9" name="spirits_capacity"/>
+                                <p class="select-box__input-text">500ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-009" value="10" name="spirits_capacity"/>
+                                <p class="select-box__input-text">620ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-010" value="11" name="spirits_capacity"/>
+                                <p class="select-box__input-text">700ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-011" value="12" name="spirits_capacity"/>
+                                <p class="select-box__input-text">720ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="spirits_capacity-012" value="13" name="spirits_capacity"/>
+                                <p class="select-box__input-text">730ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                        </div>
+                        <ul class="select-box__list">
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-000" aria-hidden="aria-hidden">所有容量</label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-001" aria-hidden="aria-hidden">750ml<span class="catalogue__filterPanel__itemNumber">(10105)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-002" aria-hidden="aria-hidden">375ml<span class="catalogue__filterPanel__itemNumber">(295)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-003" aria-hidden="aria-hidden">1.5L<span class="catalogue__filterPanel__itemNumber">(483)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-004" aria-hidden="aria-hidden">187ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-005" aria-hidden="aria-hidden">200ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-006" aria-hidden="aria-hidden">250ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-007" aria-hidden="aria-hidden">440ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-008" aria-hidden="aria-hidden">500ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-009" aria-hidden="aria-hidden">620ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-010" aria-hidden="aria-hidden">700ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-011" aria-hidden="aria-hidden">720ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="spirits_capacity-012" aria-hidden="aria-hidden">730ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 烈酒館-價位 -->
+            <div class="catalogue__filterPanel__itemGroup" data-type="wine-price">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">價位</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="300-500"><span>300</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="501-1000"><span>500</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="1001-2000"><span>1,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="2001-3000"><span>2,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="3001-4000"><span>3,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="4001-5000"><span>4,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="5000以上"><span>5,000+</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <div class="catalogue__filterPanel__itemsWrap">
+                        <input type="text" name="" id="" placeholder="$ 300">
+                        <input type="text" name="" id="" placeholder="$ 5,000 以上">
+                    </div>
+                </div>
+            </div>
+            <!-- 烈酒館-酒齡 -->
+            <div class="catalogue__filterPanel__itemGroup" data-type="wine-year">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">年份</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="NV"><span>NV</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="3年以下"><span>3年</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="3年"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="3-5年"><span>5年</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="5年"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="6-11年"><span>6年</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="10年"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="12-20年"><span>12年</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="20年"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="21-30年"><span>20年</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="30年"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="30年以上"><span>30年+</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <div class="catalogue__filterPanel__itemsWrap">
+                        <input type="text" name="" id="" placeholder="1930">
+                        <input type="text" name="" id="" placeholder="2024">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 啤酒館 -->
+        <div class="catalogue__filterPanel__itemGroups" id="list_beer" style="display: none;">
+            <!-- 啤酒館-熱門搜尋 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">熱門搜尋</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="快速到貨">快速到貨<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="快速到貨"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="各種愛爾">各種愛爾<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="各種愛爾"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="梨子＆蘋果酒">梨子＆蘋果酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="梨子＆蘋果酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="即飲調酒">即飲調酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="即飲調酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="小麥啤酒">小麥啤酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="小麥啤酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="修道院/比利時啤酒">修道院/比利時啤酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="修道院/比利時啤酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="蜂蜜酒">蜂蜜酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="蜂蜜酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="水果/季節啤酒">水果/季節啤酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="水果/季節啤酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="印度淺色愛爾">印度淺色愛爾<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="印度淺色愛爾"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="酸啤酒">酸啤酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="酸啤酒"></label></li>
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 啤酒館-類型 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">類型</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="印度淺色愛爾">印度淺色愛爾<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="印度淺色愛爾"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="即飲調酒">即飲調酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="即飲調酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="蘋果酒">蘋果酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="蘋果酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="梨子酒">梨子酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="梨子酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="水果啤酒">水果啤酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="水果啤酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="比利時愛爾">比利時愛爾<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="比利時愛爾"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="比利時烈愛爾">比利時烈愛爾<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="比利時烈愛爾"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="德式小麥皮酒">德式小麥皮酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="德式小麥皮酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="桶陳啤酒">桶陳啤酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="桶陳啤酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="無酒精飲品">無酒精飲品<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="無酒精飲品"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="蜂蜜酒">蜂蜜酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="蜂蜜酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="美式烈愛爾">美式烈愛爾<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="美式烈愛爾"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="美式淺色愛爾">美式淺色愛爾<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="美式淺色愛爾"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="美式波特與司陶特">美式波特與司陶特<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="美式波特與司陶特"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="美式琥珀與棕色艾爾">美式琥珀與棕色艾爾<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="美式琥珀與棕色艾爾"></label></li>
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 啤酒館-國家與產區 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">國家與產區</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="台灣">台灣<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="台灣"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="日本">日本<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="日本"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="美國">美國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="美國"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="日本">日本<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="日本"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="德國">德國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="德國"></label></li>
+                        
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 啤酒館-特殊原料 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">特殊原料</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="台灣茶葉">台灣茶葉<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="台灣茶葉"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="台灣茉莉花">台灣茉莉花<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="台灣茉莉花"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="可可豆">可可豆<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="可可豆"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="台灣冬瓜茶磚">台灣冬瓜茶磚<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="台灣冬瓜茶磚"></label></li>
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 啤酒館-容量 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">容量</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <div class="select-box" id="beer_capacity">
+                        <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-000" value="1" name="beer_capacity" checked="checked"/>
+                                <p class="select-box__input-text">所有容量</p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-001" value="2" name="beer_capacity"/>
+                                <p class="select-box__input-text">750ml<span class="catalogue__filterPanel__itemNumber">(10105)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-002" value="3" name="beer_capacity"/>
+                                <p class="select-box__input-text">375ml<span class="catalogue__filterPanel__itemNumber">(295)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-003" value="4" name="beer_capacity"/>
+                                <p class="select-box__input-text">1.5L<span class="catalogue__filterPanel__itemNumber">(483)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-004" value="5" name="beer_capacity"/>
+                                <p class="select-box__input-text">187ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-005" value="6" name="beer_capacity"/>
+                                <p class="select-box__input-text">200ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-006" value="7" name="beer_capacity"/>
+                                <p class="select-box__input-text">250ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-007" value="8" name="beer_capacity"/>
+                                <p class="select-box__input-text">440ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-008" value="9" name="beer_capacity"/>
+                                <p class="select-box__input-text">500ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-009" value="10" name="beer_capacity"/>
+                                <p class="select-box__input-text">620ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-010" value="11" name="beer_capacity"/>
+                                <p class="select-box__input-text">700ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-011" value="12" name="beer_capacity"/>
+                                <p class="select-box__input-text">720ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-012" value="13" name="beer_capacity"/>
+                                <p class="select-box__input-text">730ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                        </div>
+                        <ul class="select-box__list">
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-000" aria-hidden="aria-hidden">所有容量</label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-001" aria-hidden="aria-hidden">750ml<span class="catalogue__filterPanel__itemNumber">(10105)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-002" aria-hidden="aria-hidden">375ml<span class="catalogue__filterPanel__itemNumber">(295)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-003" aria-hidden="aria-hidden">1.5L<span class="catalogue__filterPanel__itemNumber">(483)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-004" aria-hidden="aria-hidden">187ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-005" aria-hidden="aria-hidden">200ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-006" aria-hidden="aria-hidden">250ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-007" aria-hidden="aria-hidden">440ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-008" aria-hidden="aria-hidden">500ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-009" aria-hidden="aria-hidden">620ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-010" aria-hidden="aria-hidden">700ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-011" aria-hidden="aria-hidden">720ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-012" aria-hidden="aria-hidden">730ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 啤酒館-價位 -->
+            <div class="catalogue__filterPanel__itemGroup" data-type="wine-price">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">價位</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="100以下"><span>100</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="100-150"><span>150</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="151-200"><span>200</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="201-300"><span>300</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="301-500"><span>500</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="500以上"><span>500+</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <div class="catalogue__filterPanel__itemsWrap">
+                        <input type="text" name="" id="" placeholder="$ 0">
+                        <input type="text" name="" id="" placeholder="$ 500 以上">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 清酒館 -->
+        <div class="catalogue__filterPanel__itemGroups" id="list_sake" style="display: none;">
+            <!-- 清酒館-熱門搜尋 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">熱門搜尋</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="快速到貨">快速到貨<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="快速到貨"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="薰酒">薰酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="薰酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="爽酒">爽酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="爽酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="熟酒">熟酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="熟酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="醇酒">醇酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="醇酒"></label></li>
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 清酒館-類型 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">類型</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="純米大吟釀">純米大吟釀<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="純米大吟釀"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="大吟釀">大吟釀<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="大吟釀"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="純米吟釀">純米吟釀<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="純米吟釀"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="吟釀">吟釀<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="吟釀"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="純米酒">純米酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="純米酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="本釀造">本釀造<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="本釀造"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="普通酒">普通酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="普通酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="梅酒">梅酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="梅酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="燒酌">燒酌<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="燒酌"></label></li>
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 清酒館-國家與產區 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">國家與產區</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="東北地方">東北地方<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="東北地方"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="九州">九州<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="九州"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="近畿地方">近畿地方<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="近畿地方"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="關東地方">關東地方<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="關東地方"></label></li>
+                        
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 清酒館-米種 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">米種</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="山田錦">山田錦<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="山田錦"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="酒造好適米(不公開)">酒造好適米(不公開)<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="酒造好適米(不公開)"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="五百萬石">五百萬石<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="五百萬石"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="雄町">雄町<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="雄町"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="美山錦">美山錦<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="美山錦"></label></li>
+                    </ul>
+                    <button type="button" aria-label="選擇多個">複選</button>
+                    <!-- <button type="submit" aria-label="">確認</button> -->
+                    <button type="button" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 清酒館-容量 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">容量</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <div class="select-box" id="beer_capacity">
+                        <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-000" value="1" name="beer_capacity" checked="checked"/>
+                                <p class="select-box__input-text">所有容量</p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-001" value="2" name="beer_capacity"/>
+                                <p class="select-box__input-text">750ml<span class="catalogue__filterPanel__itemNumber">(10105)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-002" value="3" name="beer_capacity"/>
+                                <p class="select-box__input-text">375ml<span class="catalogue__filterPanel__itemNumber">(295)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-003" value="4" name="beer_capacity"/>
+                                <p class="select-box__input-text">1.5L<span class="catalogue__filterPanel__itemNumber">(483)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-004" value="5" name="beer_capacity"/>
+                                <p class="select-box__input-text">187ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-005" value="6" name="beer_capacity"/>
+                                <p class="select-box__input-text">200ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-006" value="7" name="beer_capacity"/>
+                                <p class="select-box__input-text">250ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-007" value="8" name="beer_capacity"/>
+                                <p class="select-box__input-text">440ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-008" value="9" name="beer_capacity"/>
+                                <p class="select-box__input-text">500ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-009" value="10" name="beer_capacity"/>
+                                <p class="select-box__input-text">620ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-010" value="11" name="beer_capacity"/>
+                                <p class="select-box__input-text">700ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-011" value="12" name="beer_capacity"/>
+                                <p class="select-box__input-text">720ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="beer_capacity-012" value="13" name="beer_capacity"/>
+                                <p class="select-box__input-text">730ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                        </div>
+                        <ul class="select-box__list">
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-000" aria-hidden="aria-hidden">所有容量</label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-001" aria-hidden="aria-hidden">750ml<span class="catalogue__filterPanel__itemNumber">(10105)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-002" aria-hidden="aria-hidden">375ml<span class="catalogue__filterPanel__itemNumber">(295)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-003" aria-hidden="aria-hidden">1.5L<span class="catalogue__filterPanel__itemNumber">(483)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-004" aria-hidden="aria-hidden">187ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-005" aria-hidden="aria-hidden">200ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-006" aria-hidden="aria-hidden">250ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-007" aria-hidden="aria-hidden">440ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-008" aria-hidden="aria-hidden">500ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-009" aria-hidden="aria-hidden">620ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-010" aria-hidden="aria-hidden">700ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-011" aria-hidden="aria-hidden">720ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="beer_capacity-012" aria-hidden="aria-hidden">730ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 清酒館-價位 -->
+            <div class="catalogue__filterPanel__itemGroup" data-type="wine-price">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">價位</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="100以下"><span>100</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="100-150"><span>150</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="151-200"><span>200</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="201-300"><span>300</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="301-500"><span>500</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="500以上"><span>500+</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <div class="catalogue__filterPanel__itemsWrap">
+                        <input type="text" name="" id="" placeholder="$ 0">
+                        <input type="text" name="" id="" placeholder="$ 500 以上">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="catalogue__filterPanel__resultReview">
+            <button class="catalogue__filterPanel__resetBTN" type="reset">清除全部</button>
+            <button class="catalogue__filterPanel__submitBTN" type="submit">顯示 <span>6,593</span> 款品項</button>
+        </div>
+        
+    </form>
+    <div class="catalogue__filterPanel__wrap" data-mode="mode-desk">
+        <!-- 葡萄酒館 -->
+        <div class="catalogue__filterPanel__itemGroups" id="list_wine">
+            <!-- 熱門搜尋 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">熱門搜尋</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">頂級名酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">快速到貨<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">超值預定<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">自然酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">橘酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">陶甕酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">無酒精<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <button type="button" class="catalogue__filterPanel__multipleBTN" aria-label="選擇多個">複選</button>
+                    <button type="button" class="catalogue__filterPanel__confirmBTN" aria-label="">確認</button>
+                    <button type="button" class="catalogue__filterPanel__extendedBTN" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 類型 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">類型</span>
+                    <span>
+                        <button type="button" class="catalogue__filterPanel__originalBTN" aria-label="">切換原文</button>
+                    </span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">紅酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">白酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">粉紅酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">氣泡酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">甜酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="頂級名酒">加烈酒<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        
+                    </ul>
+                    <button type="button" class="catalogue__filterPanel__multipleBTN" aria-label="選擇多個">複選</button>
+                    <button type="button" class="catalogue__filterPanel__confirmBTN" aria-label="">確認</button>
+                    <button type="button" class="catalogue__filterPanel__extendedBTN" aria-label="展開內容"></button>
+                </div>
+            </div>
+            <!-- 國家與產區 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">國家與產區</span>
+                    <span>
+                        <button type="button" class="catalogue__filterPanel__originalBTN" aria-label="">切換原文</button>
+                        <button type="button" class="catalogue__filterPanel__originPlaceBTN" aria-label="">產區列表</button>
+                    </span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">法國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li>
+                                    <label class="catalogue__filterPanel__item catalogue-countryItem" title="波爾多">波爾多<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="波爾多"></label>
+                                    <ul class="catalogue__filterPanel__subitems">
+                                        <li><label class="catalogue__filterPanel__item" title="格拉夫">格拉夫<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="格拉夫"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="瑪歌">瑪歌<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="瑪歌"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="波雅克">波雅克<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="波雅克"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="里斯塔克-梅多克">里斯塔克-梅多克<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="里斯塔克-梅多克"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="上梅多克">上梅多克<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="上梅多克"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="拉隆-玻美候">拉隆-玻美候<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="拉隆-玻美候"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="兩海之間">兩海之間<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="兩海之間"></label></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label class="catalogue__filterPanel__item catalogue-countryItem" title="布根地">布根地<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="布根地"></label>
+                                    <ul class="catalogue__filterPanel__subitems">
+                                        <li><label class="catalogue__filterPanel__item" title="夏布利">夏布利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="夏布利"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="夏隆內丘">夏隆內丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="夏隆內丘"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="伯恩丘">伯恩丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="伯恩丘"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="夜丘">夜丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="夜丘"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="上伯恩丘">上伯恩丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="上伯恩丘"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="上夜丘">上夜丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="上夜丘"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="馬貢">馬貢<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="馬貢"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="聖布里">聖布里<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="聖布里"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="布根地全品種混釀">布根地全品種混釀<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="布根地全品種混釀"></label></li>
+                                        <li><label class="catalogue__filterPanel__item" title="布根地丘">布根地丘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="布根地丘"></label></li>
+                                    </ul>
+                                </li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="香檳">香檳<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="香檳"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="隆河谷">隆河谷<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="隆河谷"></label> </li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="羅亞爾河谷">羅亞爾河谷<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="羅亞爾河谷"></label> </li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="侏羅">侏羅<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="侏羅"></label> </li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="薄酒萊">薄酒萊<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="薄酒萊"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="阿爾薩斯">阿爾薩斯<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="阿爾薩斯"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="陸格多克">陸格多克<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="陸格多克"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="胡西雍">胡西雍<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="胡西雍"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="普班旺期">普班旺期<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="普班旺期"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="西南產區">西南產區<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="西南產區"></label></li>
+                                <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="薩瓦">薩瓦<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="薩瓦"></label> </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" id="" title="頂級名酒">義大利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="阿布魯佐">阿布魯佐<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="阿布魯佐"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="薩丁尼亞">薩丁尼亞<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="薩丁尼亞"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="坎帕尼亞">坎帕尼亞<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="坎帕尼亞"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="西西里">西西里<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="西西里"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="托斯卡尼">托斯卡尼<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="托斯卡尼"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">美國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="加州">加州<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="加州"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="奧立岡">奧立岡<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="奧立岡"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="華盛頓">華盛頓<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="華盛頓"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">西班牙<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="安達露西亞">安達露西亞<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="安達露西亞"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="亞拉岡">亞拉岡<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="亞拉岡"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="馬德里">馬德里<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="馬德里"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">澳洲<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="昆士蘭">昆士蘭<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="昆士蘭"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="南澳">南澳<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="南澳"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="維多利亞">維多利亞<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="維多利亞"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">智利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="阿空加瓜">阿空加瓜<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="阿空加瓜"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="中央谷地">中央谷地<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="中央谷地"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="科金博">科金博<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="科金博"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">德國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="萊茵高">萊茵高<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="萊茵高"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="法茲">法茲<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="法茲"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="萊茵黑森">萊茵黑森<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="萊茵黑森"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">紐西蘭<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="霍克灣">霍克灣<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="霍克灣"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="馬爾堡">馬爾堡<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="馬爾堡"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="馬丁堡">馬丁堡<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="馬丁堡"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">阿根廷<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="門多薩">門多薩<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="門多薩"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="利奧哈">利奧哈<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="利奧哈"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="薩爾塔">薩爾塔<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="薩爾塔"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">奧地利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="下奧地利">下奧地利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="下奧地利"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="布爾根蘭">布爾根蘭<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="布爾根蘭"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="維也納">維也納<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="維也納"></label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">葡萄牙<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label>
+                            <ul class="catalogue__filterPanel__subitems">
+                                <li><label class="catalogue__filterPanel__item" title="百拉達">百拉達<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="百拉達"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="里斯本">里斯本<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="里斯本"></label></li>
+                                <li><label class="catalogue__filterPanel__item" title="馬德拉">馬德拉<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="馬德拉"></label></li>
+                            </ul>
+                        </li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">日本<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">南非<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">台灣<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">希臘<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">匈牙利<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">黎巴嫩<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">喬治亞<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item catalogue-countryItem" title="頂級名酒">大韓民國<span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <button type="button" class="catalogue__filterPanel__multipleBTN" aria-label="選擇多個">複選</button>
+                    <button type="button" class="catalogue__filterPanel__confirmBTN" aria-label="">確認</button>
+                    <button type="button" class="catalogue__filterPanel__extendedBTN" aria-label="展開內容"></button>
+                </div>
+                
+            </div>
+            <!-- 品種 -->
+            <div class="catalogue__filterPanel__itemGroup" data-type="grape-varieties">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">品種</span>
+                    <span>
+                        <button type="button" class="catalogue__filterPanel__originPlaceBTN" aria-label="">品種列表</button>
+                    </span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <!-- 品種--wine -->
+                    <div tabindex="1">
+                        <ul id="searchResultsShow"></ul>
+                    </div>
+                    
+                    <div class="catalogue__filterPanel__inputSearch">
+                        <button id="catalogue-trigger" class="catalogue__filterPanel__triggerBTN" type="button" aria-label="新增葡萄品種" data-target="#catalogue-popup">新增品種選項<i class="bi bi-plus"></i></button>
+
+                        <div class="catalogue__filterPanel__searchList" id="catalogue-popup">
+                            <div>
+                                <input type="text" id="searchInput" placeholder="請輸入品種關鍵字">
+                                <button type="button" id="searchButton"><i class="bi bi-search"></i></button>
+                            </div>
+                            <ul id="searchResults"></ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- 容量 -->
+            <div class="catalogue__filterPanel__itemGroup">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">容量</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <div class="select-box" id="wine_capacity">
+                        <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-000" value="1" name="wine_capacity" checked="checked"/>
+                                <p class="select-box__input-text">所有容量</p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-001" value="2" name="wine_capacity"/>
+                                <p class="select-box__input-text">750ml<span class="catalogue__filterPanel__itemNumber">(10105)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-002" value="3" name="wine_capacity"/>
+                                <p class="select-box__input-text">375ml<span class="catalogue__filterPanel__itemNumber">(295)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-003" value="4" name="wine_capacity"/>
+                                <p class="select-box__input-text">1.5L<span class="catalogue__filterPanel__itemNumber">(483)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-004" value="5" name="wine_capacity"/>
+                                <p class="select-box__input-text">187ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-005" value="6" name="wine_capacity"/>
+                                <p class="select-box__input-text">200ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-006" value="7" name="wine_capacity"/>
+                                <p class="select-box__input-text">250ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-007" value="8" name="wine_capacity"/>
+                                <p class="select-box__input-text">440ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-008" value="9" name="wine_capacity"/>
+                                <p class="select-box__input-text">500ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-009" value="10" name="wine_capacity"/>
+                                <p class="select-box__input-text">620ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-010" value="11" name="wine_capacity"/>
+                                <p class="select-box__input-text">700ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-011" value="12" name="wine_capacity"/>
+                                <p class="select-box__input-text">720ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="capacity-012" value="13" name="wine_capacity"/>
+                                <p class="select-box__input-text">730ml<span class="catalogue__filterPanel__itemNumber">(2)</span></p>
+                            </div>
+                            <img class="select-box__icon" src="https://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                        </div>
+                        <ul class="select-box__list">
+                            <li>
+                                <label class="select-box__option" for="capacity-000" aria-hidden="aria-hidden">所有容量</label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-001" aria-hidden="aria-hidden">750ml<span class="catalogue__filterPanel__itemNumber">(10105)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-002" aria-hidden="aria-hidden">375ml<span class="catalogue__filterPanel__itemNumber">(295)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-003" aria-hidden="aria-hidden">1.5L<span class="catalogue__filterPanel__itemNumber">(483)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-004" aria-hidden="aria-hidden">187ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-005" aria-hidden="aria-hidden">200ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-006" aria-hidden="aria-hidden">250ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-007" aria-hidden="aria-hidden">440ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-008" aria-hidden="aria-hidden">500ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-009" aria-hidden="aria-hidden">620ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-010" aria-hidden="aria-hidden">700ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-011" aria-hidden="aria-hidden">720ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="capacity-012" aria-hidden="aria-hidden">730ml<span class="catalogue__filterPanel__itemNumber">(2)</span></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 價位 -->
+            <div class="catalogue__filterPanel__itemGroup" data-type="wine-price">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">價位</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="300-500"><span>300</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="501-1000"><span>500</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="1001-2000"><span>1,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="2001-3000"><span>2,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="3001-4000"><span>3,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="4001-5000"><span>4,000</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="5000以上"><span>5,000+</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <div class="catalogue__filterPanel__itemsWrap">
+                        <input type="text" name="" id="" placeholder="$ 300">
+                        <input type="text" name="" id="" placeholder="$ 5,000 以上">
+                    </div>
+                </div>
+            </div>
+            <!-- 年份 -->
+            <div class="catalogue__filterPanel__itemGroup" data-type="wine-year">
+                <div class="catalogue__filterPanel__itemsHeader">
+                    <span class="catalogue__filterPanel__itemsTitle">年份</span>
+                </div>
+                <div class="catalogue__filterPanel__items">
+                    <ul>
+                        <li><label class="catalogue__filterPanel__item" title="NV"><span>NV</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="1930以前"><span>1930</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="1931-1980"><span>1980</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="1981-1999"><span>1999</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="2000-2009"><span>2009</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="2010-2019"><span>2019</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                        <li><label class="catalogue__filterPanel__item" title="2020-2024"><span>2024</span><span class="catalogue__filterPanel__itemNumber">(4443)</span><input type="checkbox" value="頂級名酒"></label></li>
+                    </ul>
+                    <div class="catalogue__filterPanel__itemsWrap">
+                        <input type="text" name="" id="" placeholder="1930">
+                        <input type="text" name="" id="" placeholder="2024">
+                    </div>
+                </div>
+            </div>
+            <!-- 評價 -->
+            <!-- 等級 -->
+        </div>
+    </div>
+</section>    
+    <footer class="footer">
+    <div class="footer__items">
+        <div class="footer__item">
+            <div class="footer__item__title footer__item__title--close" data-target="list1">客戶服務<span class="icon_chevron"></span></div>
+            <ul class="footer__item__contents --close" id="list1">
+                <li class="footer__item__content"><a href="#">新手上路下單教學</a></li>
+                <li class="footer__item__content"><a href="#">代客儲酒</a></li>
+                <li class="footer__item__content"><a href="#">訂單配送進度查詢</a></li>
+                <li class="footer__item__content"><a href="#">取消訂閱電子報</a></li>
+                <li class="footer__item__content"><a href="#">更改配送地址</a></li>
+                <li class="footer__item__content"><a href="#">瀏覽清單</a></li>
+                <li class="footer__item__content"><a href="#">追蹤清單</a></li>
+                <li class="footer__item__content"><a href="#">Q&A 常見問題</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item__title footer__item__title--close" data-target="list2">商務合作<span class="icon_chevron"></span></div>
+            <ul class="footer__item__contents --close" id="list2">
+                <li class="footer__item__content"><a href="#">企業採購</a></li>
+                <li class="footer__item__content"><a href="#">異業合作</a></li>
+                <li class="footer__item__content"><a href="#">廠商上架</a></li>
+                <li class="footer__item__content"><a href="#">人才招募</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item__title footer__item__title--close" data-target="list3">關於我們<span class="icon_chevron"></span></div>
+            <ul class="footer__item__contents --close" id="list3">
+                <li class="footer__item__content"><a href="#">企業使命</a></li>
+                <li class="footer__item__content"><a href="#">當日配/快速到貨說明</a></li>
+                <li class="footer__item__content"><a href="#">酒窖環境一覽</a></li>
+                <li class="footer__item__content"><a href="#">品質保證</a></li>
+                <li class="footer__item__content"><a href="#">條款與細則</a></li>
+                <li class="footer__item__content"><a href="#">隱私條款</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item__title">聯絡我們</div>
+            <ul class="footer__item__contents">
+                <li class="footer__item__content">服務專線：02-2926-3667</li>
+                <li class="footer__item__content"><a href="#">客服 E-mail：service@icheers.tw</a></li>
+                <li class="footer__item__content">服務時間：<br><span>星期一~五&nbsp;&nbsp;9:00~12:00&nbsp;13:00~18:00&nbsp;&nbsp;</span><span>國定假日除外</span></li>
+                <li class="footer__item__content">傳真電話：02-2924-6220</li>
+                <li class="footer__item__content">
+                    <a class="footer__item__content--socialmedia" href="#"><img src="/iCheers-WebRevision/images/icon_line-1a4bb625.svg" alt="加入官方Line"></a>
+                    <a class="footer__item__content--socialmedia" href="#"><img src="/iCheers-WebRevision/images/icon_facebook-1dd023ea.svg" alt="加入官方Facebook"></a>
+                    <a class="footer__item__content--socialmedia" href="#"><img src="/iCheers-WebRevision/images/icon_instagram-4eb06918.svg" alt="加入官方Instagram"></a>
+                </li>
+            </ul>
+            <div class="footer__copyright">
+                <span>版權宣告</span> 
+                佳釀股份有限公司 統一編號 29081831
+                <span>Copyright @ 2024 iCheers.tw 版權所有 轉載必究</span>
+            </div>
+        </div>
+        
+    </div>
+   
+    
+</footer>
+    <div class="warning">
+    <p><span>飲酒過量有礙身體健康</span><span>禁止酒駕</span></p>
+</div>    
+    
+  </body>
+</html>
