@@ -31,7 +31,18 @@
         top: 0;
     }
 }
-
+// ---------------------- scroll bar 樣式
+@mixin scrollbarStyle{
+    &::-webkit-scrollbar{ 
+        width: 6px;
+        // border-radius: 6px;
+        background-color: rgba(0, 0, 0, 0);
+        &-thumb{
+            background-color: rgba(204, 204, 204, 0.482);
+            border-radius: 6px;
+        }
+    }
+}
 
 // 模組之間的間距
 @mixin space-between-components {

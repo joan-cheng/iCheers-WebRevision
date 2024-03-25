@@ -3,17 +3,24 @@
         display: none;
         margin-top: 60px;
         width: 100%; height: 50px;
-        padding-left: 5%;
+        max-width: 1280px;
+        margin: auto;
+        
         @include largepad{
+            width: calc(100% - 2%);
             display: block;
             margin-top: 120px;  
+            padding-left: 2%;
         }
     } 
     
     &__filterPanel{
         width: 100%; max-width: 1280px;
         margin: auto;
-        // padding: 0 2%;
+        
+        @include largepad{
+            padding: 0 2%;
+        }
         &__result{
             width: 100%;
             
@@ -33,6 +40,7 @@
                 margin-left: 5px;
             }
             @include largepad{
+                width: 100%;
                 padding-top: 1rem;
             }
 
@@ -73,20 +81,34 @@
         // ----------------- 條件篩選器
         &__wrap{
             width: 100%; height: 100vh;
+            max-width: 1280px;
             position: fixed; top: 0;
-            overflow: scroll;
+            overflow-y: scroll;
             z-index: 9;
             background-color: $BGColor-grayLight;
             //margin: auto;
             padding-top: 60px;
             padding-bottom: calc(10vh + 80px);
             // transition: padding-top .4s ease-in-out;
+            
+            @include largepad{
+                width: 90%; height: 60vh;
+                
+                top: 50%; left: 50%; transform: translate(-50%, -50%);
+                border-radius: 10px;
+                box-shadow: 0px 0px 0px 100vh rgba(0, 0, 0, 0.4);
+                padding-top: 0;
+                padding-bottom: 0;
+                border-top: $BGColor-grayLight solid 5px; 
+                border-bottom: $BGColor-grayLight solid 5px; 
+                
+                @include scrollbarStyle;
+                
+            }
+
+            
             .hideUp &{
                 padding-top: 0; 
-            }
-            @include largepad{
-                width: 100%; height: auto;
-                position: relative;
             }
             &Title{
                 width: 100%; height: 50px;
@@ -104,6 +126,86 @@
                     text-align: center;
                     font-size: $font-l;
                     color: $fontColor-dark;
+                }
+            }
+
+            // 桌機版篩選器
+            &[data-mode=mode-desk]{
+                display: none;
+                @include largepad{
+                    display: block;
+                    width: 100%; height: auto;
+                    position: relative; top: 0; left: 0; transform: none;
+                    box-shadow: none;
+                    overflow: visible;
+                    border: none;
+                    border-radius: 0;
+                    z-index: 1;
+                    
+                }
+                .catalogue__filterPanel{
+                    &__itemGroups{
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    &__itemGroup{
+                        width: 100%;
+                        display: flex; 
+                        border-bottom: #DCDCDC solid 1px;
+                        align-items: stretch;
+
+                        &:nth-last-child(-n+2){
+                            width: 50%;
+                            .catalogue__filterPanel__itemsHeader{
+                                width: 35%;
+                            }
+                            .catalogue__filterPanel__items{
+                                flex-direction: column;
+                            }
+                        }
+                        & button[class$=BTN]{
+                            height: 30px;
+                            @include nowrap;
+
+                        }
+                    }
+                    &__itemsHeader{
+                        width: 15%; height: auto;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        span{
+                            text-align: center;
+                        }
+                    }
+                    &__itemsTitle{
+                        line-height: 25px;
+                        // flex-grow: 1;
+                        
+                    }
+                    &__items{
+                        display: flex;
+                        padding: 0.5rem;
+                        align-items: center;
+                        ul{
+                            margin-bottom: 0;
+                        }
+                    }
+                    &__item{
+                        height: 25px; line-height: 25px;
+                        border: none;
+                        background-color: transparent;
+                        min-width:auto;
+                        &:hover{
+                            color: $commonColor-primary;
+                        }
+                    }
+                    &__triggerBTN{
+                        display: flex;
+                    }
+                    &__searchList{
+                        display: none;
+                    }
                 }
             }
             
@@ -147,99 +249,93 @@
             color: #fff;
             line-height: 48px;
         }
-        &__originalBTN,
-        &__originPlaceBTN{
-            width: auto; height: 48px;
-            color: #fff;
-            position: relative;
-            padding: 0 10px;
-            &::after{
-                content: '';
-                width: 100%; height: 35px;
-                border: #fff solid 1px;
-                border-radius: 48px;
-                position: absolute; 
-                left: 0; top: 50%; transform: translateY(-50%);
-
-            }
-        }
+        
 
         
-        &__itemGroup[data-type$=price],
-        &__itemGroup[data-type$=year]{
-            ul{
-                flex-wrap: nowrap;
-                gap: 0;
-                border-radius: calc(35px / 2);
-                // overflow: hidden;
-                // border: #DCDCDC solid 1px;
-                padding-bottom: 25px;
-                li{
-                    width: 100%; 
-                    flex-shrink: 1;
-                    position: relative;
-                    
-                    
-                    &:first-child{
-                        .catalogue__filterPanel__item{
-                            border-radius: 17px 0 0 17px;
-                            border-left-color: #DCDCDC;
-                            
-                            &[title=NV]{
-                                width: 80%;
-                                border-radius: 17px;
-                                position: absolute; left: 0; top: 0;
+        &__itemGroup{
+            &[data-type=across-type]{
+                @include largepad{
+                    display: none;
+                }
+            }
+            // 價位＆年份樣式
+            &[data-type$=price],
+            &[data-type$=year]{
+                
+                ul{
+                    flex-wrap: nowrap;
+                    gap: 0;
+                    border-radius: calc(35px / 2);
+                    // overflow: hidden;
+                    // border: #DCDCDC solid 1px;
+                    padding-bottom: 25px;
+                    li{
+                        width: 100%; 
+                        flex-shrink: 1;
+                        position: relative;
+                        
+                        
+                        &:first-child{
+                            .catalogue__filterPanel__item{
+                                border-radius: 17px 0 0 17px;
+                                border-left-color: #DCDCDC;
                                 
-                                & > span:first-child{
-                                    width: 100%; 
-                                    position: relative; bottom: -21px;
+                                &[title=NV]{
+                                    width: 80%;
+                                    border-radius: 17px;
+                                    position: absolute; left: 0; top: 0;
+                                    
+                                    & > span:first-child{
+                                        width: 100%; 
+                                        position: relative; bottom: -21px;
+                                    }
                                 }
+                                
                             }
                             
                         }
-                        
-                    }
-                    &:last-child{
-                        .catalogue__filterPanel__item{
-                            border-radius: 0 17px 17px 0;
+                        &:last-child{
+                            .catalogue__filterPanel__item{
+                                border-radius: 0 17px 17px 0;
+                            }
                         }
                     }
-                }
-            }
-            .catalogue__filterPanel__item{
-                width: 100%; height: 25px;
-                min-width: fit-content;
-                border-radius: 0;
-                border: solid 1px;
-                border-color: #DCDCDC #DCDCDC #DCDCDC transparent;
-                
-                span:first-child{
-                    line-height: 25px;
-                    position: absolute;
-                    bottom: -25px; left: 0;
-                    color: $fontColor-light;
+                }   
+                .catalogue__filterPanel__item{
+                    width: 100%; height: 25px;
+                    min-width: fit-content;
+                    border-radius: 0;
+                    border: solid 1px;
+                    border-color: #DCDCDC #DCDCDC #DCDCDC transparent;
+                    @include largepad{
+                        height: 20px;
+                    }
+                    span:first-child{
+                        line-height: 25px;
+                        position: absolute;
+                        bottom: -25px; left: 0;
+                        color: $fontColor-light;
+                    }
                     
                 }
-                
             }
-
-        }
-        &__itemGroup[data-type$=year]{
-            li:nth-child(2){
+            &[data-type$=year]{
+                li:nth-child(2){
+                    .catalogue__filterPanel__item{
+                        border-radius: 17px 0 0 17px;
+                        border-left-color: #DCDCDC;
+                    }
+                }
                 .catalogue__filterPanel__item{
-                    border-radius: 17px 0 0 17px;
-                    border-left-color: #DCDCDC;
+                    span{
+                        right: 0;
+                        text-align: right;
+                    }
                 }
             }
-            .catalogue__filterPanel__item{
-                span{
-                    right: 0;
-                    text-align: right;
-                }
-            }
-            
         }
-        &__inputSearch{}
+
+        // &__inputSearch{}
         &__searchList{
             width: 80%; height: 60vh;
             background-color: #fff;
@@ -247,11 +343,23 @@
             top: 50%; left: 50%;
             transform: translate(-50%, -55%);
             z-index: 99;
-            overflow: scroll;
+            overflow-y: scroll;
             border-radius: 10px;
             padding: 0 1rem;
+            border-bottom: #fff solid 10px;border-top: #fff solid 5px;
             display: none;
             box-shadow: 0px 0px 0px 100vh rgba(0, 0, 0, 0.4);
+            @include scrollbarStyle;
+
+            @include largepad{
+                display: block;
+                width: 100%; height: 300px;
+                position: relative;
+                top: 0; left: 0;
+                transform: translate(0, 0);
+                box-shadow:none;
+                z-index: unset;
+            }
             &.open{
                 display: block;
             }
@@ -278,7 +386,10 @@
             }
             ul{
                 display: flex; flex-direction: column;
-                margin: 0;
+                &[id=searchResults]{
+                    margin: 0;
+                }
+                
                 li{
                     width: 100%; height: auto;
                     padding: 0.5rem 0;
@@ -289,14 +400,14 @@
         }
         &__items{
             width: 100%;
-            padding: 0 5%;
+            padding: 1rem 5%;
             // text-align: right;
             ul{
                 width: 100%;
                 display: flex; 
                 flex-wrap: wrap;
                 gap: 5px;
-                margin: 1rem 0;
+                margin-bottom: 1rem;
                 li{
                     &:has(input[id^=grape-varieties]){
                         display: none;
@@ -407,14 +518,16 @@
             width: 100%; height: calc(10vh + 80px);
             padding-bottom: 10vh;
             padding-left: 5%; padding-right: 5%;
-            position: fixed; bottom: 0;
+            position: fixed; bottom: 0; left: 0;
             background-color: $BGColor-grayLight;
             border-top: #DCDCDC solid 1px;
             z-index: 99;
             display: flex; justify-content: space-between; align-items: center;
             
             @include largepad{
-                display: none;
+                height: 80px;
+                position: sticky; bottom: 0px;
+                padding-bottom: 0;
             }
         }
         &__resetBTN{
@@ -457,9 +570,28 @@
             margin-bottom: 1rem;
             display: flex; justify-content: space-between; align-items: center;
             color: $fontColor-light;
+            @include largepad{
+                display: none;
+            }
             & .bi-plus{
                 font-size: 2.5rem;
                 color: $fontColor-disable;
+            }
+        }
+        &__originalBTN,
+        &__originPlaceBTN{
+            width: auto; height: 48px;
+            color: #fff;
+            position: relative;
+            padding: 0 10px;
+            &::after{
+                content: '';
+                width: 100%; height: calc(75%);
+                border: #fff solid 1px;
+                border-radius: 48px;
+                position: absolute; 
+                left: 0; top: 50%; transform: translateY(-50%);
+
             }
         }
     }

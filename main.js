@@ -578,6 +578,14 @@ $(function() {
   });
 
   // ------------------------------- catalogue-filterPaneln 關閉/開啟搜尋面板
-  
+  // 展開篩選面板
+  $('.catalogue__filterPanel__advancedSearch').click(function() {
+    $('#filterPanel-wrap').show();
+  });
+
+  // 關閉篩選面板
+  $('.catalogue__filterPanel__closeBTN').click(function() {
+    $('#filterPanel-wrap').hide();
+  });
   
 });
